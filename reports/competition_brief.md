@@ -1,7 +1,5 @@
 # Datathon 2026 Playground — Competition Brief
 
-Generated: 2026-07-08T06:48:27.930115+00:00
-
 ## Status
 
 - Playground window from broadcast: **July 8–17, 2026**.
@@ -83,4 +81,3 @@ The competition provides the following files:
 
 - FAQ sheet was public/exportable but currently mostly empty.
 - Kaggle discussion topics currently returned no topics.
-- Do not submit from Hermes without explicit approval from frisky.

@@ -1,7 +1,5 @@
 # Datathon 2026 Playground — EDA & Feature Recon
 
-Generated: 2026-07-08T06:48:27.953757+00:00
-
 ## Dataset Snapshot
 
 - Train shape: `(3200, 43)`
@@ -76,7 +74,3 @@ Best local CV model in this first loop: **xgboost_fe** (0.49031).
 5. **Class identifier caution**: `kelas` may encode groups. Frequency/mod features are target-safe; target encoding must be done inside CV folds only to avoid leakage.
 6. **Ordered labels**: metric is accuracy, but labels have order. Try regression/ordinal-inspired features or calibrated class boundaries later, while still submitting class labels.
 7. **Model stack**: compare ExtraTrees/RandomForest/HistGradientBoosting/XGBoost, then blend if CV is stable.
-
-## Submission Safety
-
-No submission was made. Generated submission must be approved by frisky before using Kaggle CLI submit.
