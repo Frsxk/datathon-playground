@@ -1,0 +1,39 @@
+{
+  "experiment": "production_seed_bagged_xgb",
+  "generated_at": "2026-07-08T09:36:17.181870+00:00",
+  "description": "Augmented trajectory FE + soft-prob bag of {xgb_base, xgb_reg} over 5 seeds. Argmax of averaged probabilities.",
+  "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "models": [
+    "xgb_base",
+    "xgb_reg"
+  ],
+  "feature_shape": [
+    3200,
+    103
+  ],
+  "cv_per_seed": [
+    0.4965625,
+    0.4959375,
+    0.5021875,
+    0.503125,
+    0.4990625
+  ],
+  "cv_mean_accuracy": 0.499375,
+  "cv_std_across_seeds": 0.0028912583765551094,
+  "robust_baseline_ref": 0.4939,
+  "improvement_over_baseline": 0.005475000000000008,
+  "submission_path": "D:\\Github\\datathon2026_playground\\outputs\\submission_production.csv",
+  "submission_prediction_counts": {
+    "0": 222,
+    "1": 178,
+    "2": 177,
+    "3": 223
+  },
+  "no_kaggle_submission_made": true
+}

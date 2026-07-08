@@ -1,0 +1,36 @@
+{
+  "experiment": "production_v2_latent_score_quartile",
+  "generated_at": "2026-07-08T10:08:40.179791+00:00",
+  "description": "Reconstruct latent performance score via blended XGB-regression + XGB-classifier expected value; quartile-bin to 0..3. target is the quartile split of a hidden continuous score.",
+  "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "feature_shape": [
+    3200,
+    103
+  ],
+  "cv_per_seed": [
+    0.5171875,
+    0.505,
+    0.50875,
+    0.520625,
+    0.511875
+  ],
+  "cv_mean_accuracy": 0.5126875,
+  "cv_std_across_seeds": 0.0056305528147776035,
+  "robust_baseline_ref": 0.4939,
+  "improvement_over_baseline": 0.018787499999999957,
+  "assumption": "Test set has balanced 25/25/25/25 class design (quartile binning).",
+  "submission_path": "D:\\Github\\datathon2026_playground\\outputs\\submission_production_v2.csv",
+  "submission_prediction_counts": {
+    "0": 200,
+    "1": 200,
+    "2": 200,
+    "3": 200
+  },
+  "no_kaggle_submission_made": true
+}
