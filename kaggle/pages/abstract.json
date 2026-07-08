@@ -1,0 +1,6 @@
+[
+  {
+    "name": "abstract",
+    "content": "Schools often seek to identify students who may benefit from additional support early in the semester. Using academic and behavioral records, your task is to predict each student's performance level among four categories.\n\nThis competition focuses on multi-class classification using tabular data containing information related to grades, learning activity, assignments, and several additional attributes."
+  }
+]

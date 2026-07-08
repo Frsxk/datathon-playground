@@ -1,0 +1,380 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Baseline Walkthrough — Prediksi Tingkat Performa Siswa</title><style>
+:root{--bg:#f8fafc;--paper:#fff;--ink:#1f2937;--muted:#64748b;--pink:#ff8cc6;--lav:#e9ddff;--line:#e5e7eb;--code:#0f172a;--codefg:#e5e7eb}
+*{box-sizing:border-box}body{margin:0;background:linear-gradient(135deg,#fff7fb,#f5f3ff 45%,#ecfeff);color:var(--ink);font:16px/1.55 system-ui,-apple-system,Segoe UI,sans-serif}.wrap{max-width:1050px;margin:0 auto;padding:32px 18px 60px}.hero{background:rgba(255,255,255,.78);border:1px solid #fff;border-radius:24px;padding:28px 30px;box-shadow:0 18px 50px rgba(148,90,180,.16);margin-bottom:22px}.kicker{color:#be185d;font-weight:800;letter-spacing:.08em;text-transform:uppercase;font-size:12px}.hero h1{margin:.2em 0 .25em;font-size:34px;line-height:1.1}.meta{color:var(--muted)}.pill{display:inline-block;background:#ffe4f1;border:1px solid #ffc1de;color:#9d174d;padding:5px 10px;border-radius:999px;margin:4px 6px 0 0;font-size:13px}.cell{background:var(--paper);border:1px solid var(--line);border-radius:18px;box-shadow:0 6px 24px rgba(15,23,42,.06);margin:16px 0;overflow:hidden}.prompt{font:13px ui-monospace,SFMono-Regular,Menlo,monospace;color:#7c3aed;background:#faf5ff;border-bottom:1px solid var(--line);padding:9px 14px}.body{padding:18px 22px}.markdown h1,.markdown h2,.markdown h3{line-height:1.2}.markdown h1{font-size:28px}.markdown h2{font-size:23px;margin-top:1.2em}.markdown h3{font-size:19px}.markdown code{background:#f1f5f9;border:1px solid #e2e8f0;border-radius:6px;padding:1px 5px}.code pre,.md-code{margin:0;background:var(--code);color:var(--codefg);border-radius:14px;padding:16px 18px;overflow:auto;font:13px/1.45 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}.output{background:#111827!important;border-left:4px solid var(--pink);margin-top:12px!important}blockquote{border-left:5px solid var(--pink);background:#fff7fb;margin:12px 0;padding:10px 16px;border-radius:10px}ul{padding-left:24px}.footer{color:var(--muted);text-align:center;margin-top:28px;font-size:13px}
+</style></head><body><main class="wrap"><div class="hero"><div class="kicker">Datathon 2026 Playground Notebook Preview</div><h1>Baseline Walkthrough — Prediksi Tingkat Performa Siswa</h1><p class="meta">Rendered from <code>baseline_walkthrough.ipynb</code>. This is the organizer tutorial notebook, not our new experiment notebook yet.</p><span class="pill">31 cells</span><span class="pill">17 markdown</span><span class="pill">14 code</span><span class="pill">No saved outputs</span></div><section class="cell markdown"><div class="prompt">[1] Markdown</div><div class="body"><h1>Baseline Walkthrough — Prediksi Tingkat Performa Siswa</h1>
+<p><strong>EDA + Feature Engineering dasar + Baseline model</strong></p>
+<p>Notebook ini memandu langkah-langkah AWAL mengerjakan kompetisi: memahami data,</p>
+<p>menyiapkan baseline yang jujur, dan mencoba feature engineering generik. Tujuannya</p>
+<p>mengajarkan <strong>cara berpikir dan alurnya</strong>, bukan memberi jawaban akhir.</p>
+<blockquote>
+<p>Catatan: notebook ini sengaja <strong>berhenti di tingkat baseline</strong>. Transformasi</p>
+<p>spesifik yang membuka tiap sinyal tersembunyi tidak dibahas di sini itu</p>
+<p>bagian Anda untuk dieksplorasi. Di akhir ada daftar arah eksplorasi.</p>
+</blockquote>
+<p>Alur:</p>
+<p>0. Setup &amp; memuat data</p>
+<p>1. Exploratory Data Analysis (EDA)</p>
+<p>2. Baseline model (kolom mentah)</p>
+<p>3. Feature engineering generik (agregasi sederhana)</p>
+<p>4. Validasi &amp; ringkasan</p></div></section><section class="cell markdown"><div class="prompt">[2] Markdown</div><div class="body"><h2>0. Setup &amp; Memuat Data</h2></div></section><section class="cell code"><div class="prompt">[3] Code</div><div class="body"><pre><code>import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+
+pd.set_option(&quot;display.max_columns&quot;, 60)
+plt.rcParams[&quot;figure.figsize&quot;] = (9, 4)
+plt.rcParams[&quot;axes.grid&quot;] = True
+plt.rcParams[&quot;grid.alpha&quot;] = 0.3
+
+train = pd.read_csv(&quot;train.csv&quot;)
+test  = pd.read_csv(&quot;test.csv&quot;)
+
+print(&quot;train:&quot;, train.shape, &quot;| test:&quot;, test.shape)
+train.head()</code></pre><pre class="output"><code>train: (3200, 43) | test: (800, 42)
+</code></pre><pre class="output"><code>   id  nilai_minggu_01  nilai_minggu_02  nilai_minggu_03  nilai_minggu_04  \
+0   0              2.6              6.4              3.6              1.0   
+1   1             -0.3              5.7              1.7              1.3   
+2   2             -4.8             -0.8             -3.5             -6.3   
+3   4              4.7              1.1              2.1              0.2   
+4   5             13.3              3.5              3.4              4.1   
+
+   nilai_minggu_05  nilai_minggu_06  nilai_minggu_07  nilai_minggu_08  \
+0              4.4              8.5             -4.0             -0.1   
+1              6.1              5.8             -0.1             -3.8   
+2             -3.7             -1.5             10.7              8.7   
+3              1.9              1.4             -0.5             -0.3   
+4              6.2              8.7             -5.0             -6.1   
+
+   nilai_minggu_09  nilai_minggu_10  nilai_minggu_11  nilai_minggu_12  \
+0             -4.7              1.0             -4.7             -5.1   
+1             -3.1             -3.1             -1.0              1.0   
+2              5.8              5.2              7.2              9.9   
+3              0.5             -1.4             -1.2              3.6   
+4             -5.2             -8.2             -7.1             -6.6   
+
+   skor_motivasi  skor_kedisiplinan  aktivitas_hari_01  aktivitas_hari_02  \
+0          -0.53              -0.33               64.3               42.7   
+1          -2.24               1.82               27.8               51.6   
+2          -1.18              -1.34               33.9               50.4   
+3          -0.60               0.69               51.0               48.0   
+4          -1.19              -0.67               59.2               43.0   
+
+   aktivitas_hari_03  aktivitas_hari_04  aktivitas_hari_05  aktivitas_hari_06  \
+0               42.4               65.4               77.6               61.2   
+1               53.6               56.4               40.7               68.0   
+2               50.0               36.4               73.0               66.4   
+3               36.5               31.8               53.0               60.7   
+4               43.6               64.6               57.7               42.2   
+
+   aktivitas_hari_07  aktivitas_hari_08  aktivitas_hari_09  aktivitas_hari_10  \
+0               36.8               34.4               51.8               89.6   
+1               66.4               30.5               51.8               74.3   
+2               36.6               62.2               60.5               35.9   
+3               76.7               65.1               51.1               39.0   
+4               57.7               57.7               47.9               37.2   
+
+   aktivitas_hari_11  aktivitas_hari_12  aktivitas_hari_13  aktivitas_hari_14  \
+0               55.2               44.7               42.0               46.7   
+1               61.4               41.6               38.7               72.0   
+2               49.0               63.3               43.7               47.2   
+3               36.4               41.9               49.1               56.2   
+4               62.3               77.4               36.5               42.2   
+
+   aktivitas_hari_15  aktivitas_hari_16  tugas_selesai  tugas_diberikan  \
+0               69.2               46.9              8                9   
+1               31.7               32.6             46               85   
+2               53.5               44.9             23               75   
+3               70.6               64.5             95              110   
+4               58.5               52.8             24               32   
+
+   kelas  urutan_ujian  skor_tryout  jarak_rumah_km  skor_ekstrakurikuler  \
+0    114        0.0817         72.3            0.46                  0.00   
+1    301        0.3388         41.4           -1.29                  0.51   
+2     28        0.0517         73.2           -0.03                 -0.33   
+3    580        0.0310         59.1           -0.20                  0.24   
+4    127        0.5829         60.7            1.06                  0.49   
+
+   indeks_kehadiran  skor_literasi  jumlah_saudara  skor_minat_belajar  target  
+0             -0.38          -0.24           -0.70               -0.62       3  
+1              0.86          -0.70           -1.04                2.15       1  
+2              0.14           0.80            0.26               -0.57       3  
+3              1.68          -0.44            1.32               -0.64       1  
+4              0.42          -1.36           -0.45               -1.92       3  </code></pre></div></section><section class="cell markdown"><div class="prompt">[4] Markdown</div><div class="body"><h2>1. Exploratory Data Analysis</h2>
+<p>Langkah pertama selalu memahami data: ukuran, tipe kolom, nilai hilang,</p>
+<p>keseimbangan kelas, dan hubungan tiap kolom dengan target.</p></div></section><section class="cell code"><div class="prompt">[5] Code</div><div class="body"><pre><code>train.info()</code></pre><pre class="output"><code>&lt;class &#x27;pandas.DataFrame&#x27;&gt;
+RangeIndex: 3200 entries, 0 to 3199
+Data columns (total 43 columns):
+ #   Column                Non-Null Count  Dtype  
+---  ------                --------------  -----  
+ 0   id                    3200 non-null   int64  
+ 1   nilai_minggu_01       3200 non-null   float64
+ 2   nilai_minggu_02       3200 non-null   float64
+ 3   nilai_minggu_03       3200 non-null   float64
+ 4   nilai_minggu_04       3200 non-null   float64
+ 5   nilai_minggu_05       3200 non-null   float64
+ 6   nilai_minggu_06       3200 non-null   float64
+ 7   nilai_minggu_07       3200 non-null   float64
+ 8   nilai_minggu_08       3200 non-null   float64
+ 9   nilai_minggu_09       3200 non-null   float64
+ 10  nilai_minggu_10       3200 non-null   float64
+ 11  nilai_minggu_11       3200 non-null   float64
+ 12  nilai_minggu_12       3200 non-null   float64
+ 13  skor_motivasi         3200 non-null   float64
+ 14  skor_kedisiplinan     3200 non-null   float64
+ 15  aktivitas_hari_01     3200 non-null   float64
+ 16  aktivitas_hari_02     3200 non-null   float64
+ 17  aktivitas_hari_03     3200 non-null   float64
+ 18  aktivitas_hari_04     3200 non-null   float64
+ 19  aktivitas_hari_05     3200 non-null   float64
+ 20  aktivitas_hari_06     3200 non-null   float64
+ 21  aktivitas_hari_07     3200 non-null   float64
+ 22  aktivitas_hari_08     3200 non-null   float64
+ 23  aktivitas_hari_09     3200 non-null   float64
+ 24  aktivitas_hari_10     3200 non-null   float64
+ 25  aktivitas_hari_11     3200 non-null   float64
+ 26  aktivitas_hari_12     3200 non-null   float64
+ 27  aktivitas_hari_13     3200 non-null   float64
+ 28  aktivitas_hari_14     3200 non-null   float64
+ 29  aktivitas_hari_15     3200 non-null   float64
+ 30  aktivitas_hari_16     3200 non-null   float64
+ 31  tugas_selesai         3200 non-null   int64  
+ 32  tugas_diberikan       3200 non-null   int64  
+ 33  kelas                 3200 non-null   int64  
+ 34  urutan_ujian          3200 non-null   float64
+ 35  skor_tryout           3200 non-null   float64
+ 36  jarak_rumah_km        3200 non-null   float64
+ 37  skor_ekstrakurikuler  3200 non-null   float64
+ 38  indeks_kehadiran      3200 non-null   float64
+ 39  skor_literasi         3200 non-null   float64
+ 40  jumlah_saudara        3200 non-null   float64
+ 41  skor_minat_belajar    3200 non-null   float64
+ 42  target                3200 non-null   int64  
+dtypes: float64(38), int64(5)
+memory usage: 1.0 MB
+</code></pre></div></section><section class="cell code"><div class="prompt">[6] Code</div><div class="body"><pre><code>print(&quot;Total nilai hilang:&quot;, int(train.isna().sum().sum()))
+train.describe().T.head(20)</code></pre><pre class="output"><code>Total nilai hilang: 0
+</code></pre><pre class="output"><code>                    count         mean          std    min      25%      50%  \
+id                 3200.0  2011.313437  1163.716874   0.00  997.750  2030.50   
+nilai_minggu_01    3200.0     0.034469     4.603547 -12.80   -3.500    -0.00   
+nilai_minggu_02    3200.0     0.018188     4.538317 -13.70   -3.300     0.00   
+nilai_minggu_03    3200.0    -0.021969     4.630500 -12.90   -3.400    -0.10   
+nilai_minggu_04    3200.0     0.013188     4.656880 -13.70   -3.525     0.00   
+nilai_minggu_05    3200.0    -0.046656     4.579261 -13.50   -3.400    -0.10   
+nilai_minggu_06    3200.0    -0.023094     4.595992 -13.90   -3.400    -0.15   
+nilai_minggu_07    3200.0     0.018969     4.566149 -15.20   -3.325     0.00   
+nilai_minggu_08    3200.0     0.072031     4.664008 -13.10   -3.500     0.10   
+nilai_minggu_09    3200.0    -0.062969     4.564136 -12.90   -3.500    -0.05   
+nilai_minggu_10    3200.0    -0.032344     4.618932 -13.50   -3.500    -0.10   
+nilai_minggu_11    3200.0     0.040906     4.584373 -13.50   -3.400     0.00   
+nilai_minggu_12    3200.0     0.047219     4.580111 -13.60   -3.400     0.00   
+skor_motivasi      3200.0    -0.025572     1.500627  -5.15   -1.060    -0.01   
+skor_kedisiplinan  3200.0    -0.002013     1.521144  -5.22   -1.010    -0.02   
+aktivitas_hari_01  3200.0    49.922844    13.630422   9.20   39.700    49.80   
+aktivitas_hari_02  3200.0    49.575187    13.683673  10.80   39.375    49.40   
+aktivitas_hari_03  3200.0    50.191437    13.946577   9.60   39.700    50.30   
+aktivitas_hari_04  3200.0    50.246125    13.884227   6.20   40.000    50.50   
+aktivitas_hari_05  3200.0    50.114969    13.867851   9.70   39.700    50.30   
+
+                        75%      max  
+id                 3013.250  3999.00  
+nilai_minggu_01       3.500    13.90  
+nilai_minggu_02       3.400    13.20  
+nilai_minggu_03       3.400    12.80  
+nilai_minggu_04       3.600    14.50  
+nilai_minggu_05       3.300    13.40  
+nilai_minggu_06       3.300    13.20  
+nilai_minggu_07       3.300    13.60  
+nilai_minggu_08       3.600    14.70  
+nilai_minggu_09       3.400    11.80  
+nilai_minggu_10       3.400    12.90  
+nilai_minggu_11       3.600    13.00  
+nilai_minggu_12       3.500    12.90  
+skor_motivasi         1.010     6.28  
+skor_kedisiplinan     1.000     5.38  
+aktivitas_hari_01    60.400    89.90  
+aktivitas_hari_02    59.700    94.40  
+aktivitas_hari_03    60.325   104.00  
+aktivitas_hari_04    60.600    89.80  
+aktivitas_hari_05    59.900    93.20  </code></pre></div></section><section class="cell markdown"><div class="prompt">[7] Markdown</div><div class="body"><h3>1.1 Distribusi kelas target</h3>
+<p>Ada 4 kelas. Kita cek keseimbangannya untuk memahami baseline tebakan acak</p>
+<p>(1/4 = 25%) dan memastikan akurasi adalah metrik yang adil.</p></div></section><section class="cell code"><div class="prompt">[8] Code</div><div class="body"><pre><code>counts = train[&quot;target&quot;].value_counts().sort_index()
+print(counts.to_dict())
+
+fig, ax = plt.subplots()
+ax.bar(counts.index.astype(str), counts.values, color=&quot;#4C72B0&quot;)
+ax.set_title(&quot;Distribusi Kelas Target&quot;)
+ax.set_xlabel(&quot;Kelas&quot;); ax.set_ylabel(&quot;Jumlah siswa&quot;)
+plt.show()</code></pre><pre class="output"><code>{0: 813, 1: 796, 2: 784, 3: 807}
+</code></pre><pre class="output"><code>&lt;Figure size 900x400 with 1 Axes&gt;</code></pre></div></section><section class="cell markdown"><div class="prompt">[9] Markdown</div><div class="body"><p>Keempat kelas seimbang (~25%), jadi baseline tebakan acak ada di sekitar 0,25</p>
+<p>dan <strong>akurasi</strong> adalah metrik yang tepat.</p></div></section><section class="cell markdown"><div class="prompt">[10] Markdown</div><div class="body"><h3>1.2 Sebaran beberapa kolom</h3>
+<p>Sekilas melihat bentuk distribusi kolom dari tiap kelompok berbeda. Ini membantu</p>
+<p>kita memahami skala dan karakter data.</p></div></section><section class="cell code"><div class="prompt">[11] Code</div><div class="body"><pre><code>sample_cols = [&quot;nilai_minggu_01&quot;, &quot;skor_motivasi&quot;, &quot;aktivitas_hari_01&quot;,
+               &quot;tugas_selesai&quot;, &quot;skor_tryout&quot;, &quot;indeks_kehadiran&quot;]
+
+fig, axes = plt.subplots(2, 3, figsize=(13, 6))
+for col, ax in zip(sample_cols, axes.ravel()):
+    ax.hist(train[col], bins=30, color=&quot;#55A868&quot;, alpha=0.8)
+    ax.set_title(col, fontsize=10)
+plt.tight_layout(); plt.show()</code></pre><pre class="output"><code>&lt;Figure size 1300x600 with 6 Axes&gt;</code></pre></div></section><section class="cell markdown"><div class="prompt">[12] Markdown</div><div class="body"><h3>1.3 Seberapa informatif kolom mentah terhadap target?</h3>
+<p>Ini langkah paling penting. Kita hitung korelasi absolut tiap kolom mentah</p>
+<p>dengan target. Bila hampir semua mendekati nol, artinya kolom mentah saja tidak</p>
+<p>cukup, kita perlu feature engineering.</p></div></section><section class="cell code"><div class="prompt">[13] Code</div><div class="body"><pre><code>feat_cols = [col for col in train.columns if col not in (&quot;id&quot;, &quot;target&quot;)]
+
+corr = (train[feat_cols]
+        .apply(lambda col: np.corrcoef(col, train[&quot;target&quot;])[0, 1])
+        .abs()
+        .sort_values(ascending=False))
+
+print(&quot;Korelasi |maks|   :&quot;, round(corr.max(), 3))
+print(&quot;Korelasi |median| :&quot;, round(corr.median(), 3))
+
+fig, ax = plt.subplots(figsize=(11, 5))
+ax.bar(range(len(corr)), corr.values, color=&quot;#55A868&quot;)
+ax.axhline(0.05, color=&quot;red&quot;, ls=&quot;--&quot;, lw=1, label=&quot;ambang 0,05&quot;)
+ax.set_xticks(range(len(corr)))
+ax.set_xticklabels(corr.index, rotation=90, fontsize=7)
+ax.set_title(&quot;Korelasi Absolut Tiap Kolom Mentah dengan Target&quot;)
+ax.set_ylabel(&quot;|korelasi|&quot;); ax.legend()
+plt.tight_layout(); plt.show()</code></pre><pre class="output"><code>Korelasi |maks|   : 0.215
+Korelasi |median| : 0.011
+</code></pre><pre class="output"><code>&lt;Figure size 1100x500 with 1 Axes&gt;</code></pre></div></section><section class="cell markdown"><div class="prompt">[14] Markdown</div><div class="body"><p>Hampir seluruh kolom berada jauh di bawah 0,05 dan yang tertinggi pun hanya</p>
+<p>~0,2. <strong>Tidak ada satu kolom mentah yang bisa diandalkan.</strong> Inilah inti tantangan, dan alasan feature engineering menjadi</p>
+<p>kunci.</p></div></section><section class="cell markdown"><div class="prompt">[15] Markdown</div><div class="body"><h3>1.4 Korelasi antar fitur</h3>
+<p>Cek cepat apakah ada kelompok kolom yang saling berkorelasi (mis. antar minggu</p>
+<p>atau antar hari). Ini memberi petunjuk struktur, walau belum mengungkap sinyal.</p></div></section><section class="cell code"><div class="prompt">[16] Code</div><div class="body"><pre><code>subset = ([&quot;nilai_minggu_01&quot;, &quot;nilai_minggu_06&quot;, &quot;nilai_minggu_12&quot;] +
+          [&quot;aktivitas_hari_01&quot;, &quot;aktivitas_hari_08&quot;, &quot;aktivitas_hari_16&quot;] +
+          [&quot;tugas_selesai&quot;, &quot;tugas_diberikan&quot;, &quot;skor_tryout&quot;])
+cmat = train[subset].corr()
+
+fig, ax = plt.subplots(figsize=(7, 6))
+im = ax.imshow(cmat, cmap=&quot;coolwarm&quot;, vmin=-1, vmax=1)
+ax.set_xticks(range(len(subset))); ax.set_xticklabels(subset, rotation=90, fontsize=8)
+ax.set_yticks(range(len(subset))); ax.set_yticklabels(subset, fontsize=8)
+fig.colorbar(im, fraction=0.046, pad=0.04)
+ax.set_title(&quot;Heatmap Korelasi (subset kolom)&quot;)
+plt.tight_layout(); plt.show()</code></pre><pre class="output"><code>&lt;Figure size 700x600 with 2 Axes&gt;</code></pre></div></section><section class="cell markdown"><div class="prompt">[17] Markdown</div><div class="body"><h2>2. Baseline Model (Kolom Mentah)</h2>
+<p>Kita buat baseline jujur: latih model langsung pada kolom mentah dengan 5-fold </p>
+<p>*cross-validation*. Ini titik tolak yang harus kita kalahkan dengan FE.</p></div></section><section class="cell code"><div class="prompt">[18] Code</div><div class="body"><pre><code>from sklearn.linear_model import LogisticRegression
+from sklearn.preprocessing import StandardScaler
+from sklearn.pipeline import make_pipeline
+from sklearn.model_selection import cross_val_score
+
+y = train[&quot;target&quot;]
+X_raw = train[feat_cols]
+
+def evaluate(features, target=y, cv=5):
+    &#x27;&#x27;&#x27;Akurasi CV rata-rata, Logistic Regression terstandardisasi.&#x27;&#x27;&#x27;
+    model = make_pipeline(StandardScaler(), LogisticRegression(max_iter=3000))
+    return cross_val_score(model, features, target, cv=cv).mean()
+
+baseline = evaluate(X_raw)
+print(f&quot;Baseline (kolom mentah, Logistic Regression): {baseline:.3f}&quot;)</code></pre><pre class="output"><code>Baseline (kolom mentah, Logistic Regression): 0.353
+</code></pre></div></section><section class="cell markdown"><div class="prompt">[19] Markdown</div><div class="body"><h3>2.1 Apakah model yang lebih kuat menolong?</h3>
+<p>Langkah pertama biasanya &quot;pakai model lebih canggih&quot;. Kita coba XGBoost pada</p>
+<p>kolom mentah untuk melihat apakah itu solusinya.</p></div></section><section class="cell code"><div class="prompt">[20] Code</div><div class="body"><pre><code>from xgboost import XGBClassifier
+
+xgb = XGBClassifier(tree_method=&quot;hist&quot;, n_estimators=400, max_depth=6,
+                    learning_rate=0.1, random_state=0, n_jobs=-1,
+                    eval_metric=&quot;mlogloss&quot;, verbosity=0)
+xgb_raw = cross_val_score(xgb, X_raw, y, cv=3).mean()
+print(f&quot;XGBoost (kolom mentah): {xgb_raw:.3f}&quot;)</code></pre><pre class="output"><code>XGBoost (kolom mentah): 0.444
+</code></pre></div></section><section class="cell markdown"><div class="prompt">[21] Markdown</div><div class="body"><p>XGBoost hanya sedikit lebih baik dan masih jauh dari memuaskan. **Mengganti</p>
+<p>kekuatan model bukan jawabannya** masalahnya ada di representasi fitur. Mari</p>
+<p>beralih ke feature engineering.</p></div></section><section class="cell markdown"><div class="prompt">[22] Markdown</div><div class="body"><h2>3. Feature Engineering Generik</h2>
+<p>Saat menghadapi banyak kolom numerik yang dikelompokkan (mis. nilai per minggu,</p>
+<p>aktivitas per hari), langkah generik pertama adalah membuat **fitur ringkasan</p>
+<p>(agregasi)** dari tiap kelompok: rata-rata, simpangan baku, nilai maksimum/</p>
+<p>minimum, dan rentang. Ini sering memberi sedikit peningkatan, dan menjadi</p>
+<p>fondasi sebelum mencoba transformasi yang lebih spesifik.</p></div></section><section class="cell code"><div class="prompt">[23] Code</div><div class="body"><pre><code>week_cols = [f&quot;nilai_minggu_{i:02d}&quot; for i in range(1, 13)]
+day_cols  = [f&quot;aktivitas_hari_{i:02d}&quot; for i in range(1, 17)]
+
+fe = train[feat_cols].copy()
+
+for name, cols in [(&quot;minggu&quot;, week_cols), (&quot;hari&quot;, day_cols)]:
+    fe[f&quot;{name}_mean&quot;]  = train[cols].mean(axis=1)
+    fe[f&quot;{name}_std&quot;]   = train[cols].std(axis=1)
+    fe[f&quot;{name}_max&quot;]   = train[cols].max(axis=1)
+    fe[f&quot;{name}_min&quot;]   = train[cols].min(axis=1)
+    fe[f&quot;{name}_range&quot;] = train[cols].max(axis=1) - train[cols].min(axis=1)
+
+added = [c for c in fe.columns if c not in feat_cols]
+print(&quot;Fitur ringkasan yang ditambahkan:&quot;, added)
+
+acc_agg = evaluate(fe)
+print(f&quot;\nBaseline mentah        : {baseline:.3f}&quot;)
+print(f&quot;+ agregasi kelompok    : {acc_agg:.3f}&quot;)</code></pre><pre class="output"><code>Fitur ringkasan yang ditambahkan: [&#x27;minggu_mean&#x27;, &#x27;minggu_std&#x27;, &#x27;minggu_max&#x27;, &#x27;minggu_min&#x27;, &#x27;minggu_range&#x27;, &#x27;hari_mean&#x27;, &#x27;hari_std&#x27;, &#x27;hari_max&#x27;, &#x27;hari_min&#x27;, &#x27;hari_range&#x27;]
+
+Baseline mentah        : 0.353
++ agregasi kelompok    : 0.403
+</code></pre></div></section><section class="cell markdown"><div class="prompt">[24] Markdown</div><div class="body"><p>Agregasi sederhana memberi sedikit kenaikan. Kita lihat fitur ringkasan mana</p>
+<p>yang paling berkorelasi dengan target, ini memberi petunjuk kelompok mana yang</p>
+<p>menyimpan sinyal lebih kuat.</p></div></section><section class="cell code"><div class="prompt">[25] Code</div><div class="body"><pre><code>agg_corr = (fe[added]
+            .apply(lambda col: abs(np.corrcoef(col, y)[0, 1]))
+            .sort_values(ascending=False))
+print(agg_corr.round(3).to_string())
+
+fig, ax = plt.subplots()
+ax.barh(agg_corr.index[::-1], agg_corr.values[::-1], color=&quot;#C44E52&quot;)
+ax.set_title(&quot;Korelasi Fitur Agregasi dengan Target&quot;)
+ax.set_xlabel(&quot;|korelasi|&quot;)
+plt.tight_layout(); plt.show()</code></pre><pre class="output"><code>minggu_std      0.396
+minggu_range    0.375
+minggu_max      0.338
+minggu_min      0.325
+hari_range      0.050
+hari_max        0.044
+hari_std        0.039
+hari_min        0.027
+minggu_mean     0.013
+hari_mean       0.013
+</code></pre><pre class="output"><code>&lt;Figure size 900x400 with 1 Axes&gt;</code></pre></div></section><section class="cell markdown"><div class="prompt">[26] Markdown</div><div class="body"><p>Beberapa fitur ringkasan (mis. simpangan baku atau rentang) tampak sedikit</p>
+<p>lebih informatif daripada kolom mentahnya. Ini *petunjuk* bahwa &quot;bentuk&quot; deret</p>
+<p>,bukan nilai tunggalnya mungkin penting. Mengejar petunjuk seperti inilah</p>
+<p>yang akan membawa Anda ke transformasi yang lebih kuat.</p></div></section><section class="cell markdown"><div class="prompt">[27] Markdown</div><div class="body"><h3>3.1 Coba juga dengan XGBoost</h3>
+<p>Kita ukur fitur agregasi pada XGBoost untuk perbandingan.</p></div></section><section class="cell code"><div class="prompt">[28] Code</div><div class="body"><pre><code>acc_agg_xgb = cross_val_score(xgb, fe, y, cv=3).mean()
+print(f&quot;XGBoost kolom mentah    : {xgb_raw:.3f}&quot;)
+print(f&quot;XGBoost + agregasi      : {acc_agg_xgb:.3f}&quot;)</code></pre><pre class="output"><code>XGBoost kolom mentah    : 0.444
+XGBoost + agregasi      : 0.452
+</code></pre></div></section><section class="cell markdown"><div class="prompt">[29] Markdown</div><div class="body"><h2>4. Ringkasan Sementara &amp; Submisi Baseline</h2>
+<p>Kita rangkum perolehan sejauh ini, lalu buat submisi baseline. Submisi ini</p>
+<p>belum kompetitif, tujuannya memastikan alur train → FE → predict → file</p>
+<p>submisi berjalan benar, sehingga nanti tinggal mengganti bagian FE-nya.</p></div></section><section class="cell code"><div class="prompt">[30] Code</div><div class="body"><pre><code>summary = pd.DataFrame([
+    (&quot;Linear  — kolom mentah&quot;, baseline),
+    (&quot;Linear  — + agregasi&quot;,   acc_agg),
+    (&quot;XGBoost — kolom mentah&quot;,  xgb_raw),
+    (&quot;XGBoost — + agregasi&quot;,    acc_agg_xgb),
+], columns=[&quot;pipeline&quot;, &quot;akurasi_cv&quot;])
+print(summary.to_string(index=False))</code></pre><pre class="output"><code>              pipeline  akurasi_cv
+Linear  — kolom mentah    0.353125
+  Linear  — + agregasi    0.403438
+XGBoost — kolom mentah    0.443749
+  XGBoost — + agregasi    0.451872
+</code></pre></div></section><section class="cell code"><div class="prompt">[31] Code</div><div class="body"><pre><code>def make_features(df):
+    &#x27;&#x27;&#x27;FE generik (agregasi kelompok). Terapkan identik ke train &amp; test.&#x27;&#x27;&#x27;
+    out = df[[c for c in df.columns if c not in (&quot;id&quot;, &quot;target&quot;)]].copy()
+    wk = [f&quot;nilai_minggu_{i:02d}&quot; for i in range(1, 13)]
+    dy = [f&quot;aktivitas_hari_{i:02d}&quot; for i in range(1, 17)]
+    for name, cols in [(&quot;minggu&quot;, wk), (&quot;hari&quot;, dy)]:
+        out[f&quot;{name}_mean&quot;]  = df[cols].mean(axis=1)
+        out[f&quot;{name}_std&quot;]   = df[cols].std(axis=1)
+        out[f&quot;{name}_max&quot;]   = df[cols].max(axis=1)
+        out[f&quot;{name}_min&quot;]   = df[cols].min(axis=1)
+        out[f&quot;{name}_range&quot;] = df[cols].max(axis=1) - df[cols].min(axis=1)
+    return out
+
+X_train = make_features(train)
+X_test  = make_features(test)
+
+model = make_pipeline(StandardScaler(), LogisticRegression(max_iter=3000))
+model.fit(X_train, y)
+pred = model.predict(X_test)
+
+submission = pd.DataFrame({&quot;id&quot;: test[&quot;id&quot;], &quot;target&quot;: pred})
+submission.to_csv(&quot;submission_baseline.csv&quot;, index=False)
+print(&quot;submission_baseline.csv tersimpan.&quot;)
+submission.head()</code></pre><pre class="output"><code>submission_baseline.csv tersimpan.
+</code></pre><pre class="output"><code>   id  target
+0   3       3
+1  12       2
+2  14       3
+3  18       3
+4  28       1</code></pre></div></section><div class="footer">Preview generated by Kitty on the giant cat tree. (=^･ω･^=)</div></main></body></html>

@@ -1,0 +1,85 @@
+{
+  "experiment": "blend_exp",
+  "generated_at": "2026-07-08T08:06:07.670827+00:00",
+  "description": "OOF soft probability averaging blend of logreg/histgb/xgboost on engineered features",
+  "baseline_cv": 0.49031,
+  "cv": "StratifiedKFold(n_splits=5, shuffle=True, random_state=44)",
+  "feature_shape": [
+    3200,
+    95
+  ],
+  "models": [
+    "logreg_fe",
+    "histgb_fe",
+    "xgboost_fe"
+  ],
+  "per_model_results": [
+    {
+      "name": "logreg_fe",
+      "fold_scores": [
+        0.4703125,
+        0.496875,
+        0.4890625,
+        0.4515625,
+        0.45625
+      ],
+      "mean_accuracy": 0.47281249999999997,
+      "std_accuracy": 0.017749339776453668,
+      "oof_accuracy": 0.4728125
+    },
+    {
+      "name": "histgb_fe",
+      "fold_scores": [
+        0.475,
+        0.5046875,
+        0.4765625,
+        0.4796875,
+        0.4984375
+      ],
+      "mean_accuracy": 0.48687499999999995,
+      "std_accuracy": 0.012247448713915877,
+      "oof_accuracy": 0.486875
+    },
+    {
+      "name": "xgboost_fe",
+      "fold_scores": [
+        0.4609375,
+        0.509375,
+        0.4828125,
+        0.4984375,
+        0.4875
+      ],
+      "mean_accuracy": 0.4878125,
+      "std_accuracy": 0.016280020347038886,
+      "oof_accuracy": 0.4878125
+    }
+  ],
+  "blend_equal": {
+    "oof_accuracy": 0.4921875,
+    "weights": {
+      "logreg_fe": 0.3333333333333333,
+      "histgb_fe": 0.3333333333333333,
+      "xgboost_fe": 0.3333333333333333
+    }
+  },
+  "blend_weighted": {
+    "oof_accuracy": 0.4915625,
+    "weights": {
+      "logreg_fe": 0.3266407599309154,
+      "histgb_fe": 0.33635578583765113,
+      "xgboost_fe": 0.3370034542314335
+    }
+  },
+  "best_blend_name": "soft_equal",
+  "best_blend_oof_accuracy": 0.4921875,
+  "beats_baseline": true,
+  "submission_path": "/home/frxsk/kittys-workspace/datathon2026/playground/outputs/submission_blend.csv",
+  "submission_validated": true,
+  "submission_prediction_counts": {
+    "0": 231,
+    "1": 165,
+    "2": 166,
+    "3": 238
+  },
+  "no_kaggle_submission_made": true
+}

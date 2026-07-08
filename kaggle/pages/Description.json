@@ -1,0 +1,6 @@
+[
+  {
+    "name": "Description",
+    "content": "Each row in the dataset represents a single student. The available features include weekly academic progress, behavioral scores, daily learning activity, assignment completion records, mock exam information, and other characteristics associated with the student's learning environment and habits.\n\nThe target variable consists of four ordered performance levels:\n\n- **0** - Very Low Performance\n- **1** - Low Performance\n- **2** - Good Performance\n- **3** - Excellent Performance\n\nParticipants are free to use any preprocessing, feature engineering, and machine learning techniques to build the most accurate predictive model."
+  }
+]

@@ -1,0 +1,95 @@
+{
+  "experiment": "kelas_encoding",
+  "generated_at": "2026-07-08T08:11:49.227220+00:00",
+  "description": "CV-safe smoothed target encoding for kelas; encodings built inside each fold only.",
+  "baseline_ref": 0.49031,
+  "random_state": 45,
+  "cv": "StratifiedKFold(n_splits=5, shuffle=True, random_state=45)",
+  "smoothing": 10.0,
+  "feature_shape_base": [
+    3200,
+    95
+  ],
+  "results": {
+    "xgboost_baseline": {
+      "fold_scores": [
+        0.5171875,
+        0.503125,
+        0.503125,
+        0.475,
+        0.5109375
+      ],
+      "mean_accuracy": 0.5018750000000001,
+      "std_accuracy": 0.01443601182806389
+    },
+    "histgb_baseline": {
+      "fold_scores": [
+        0.503125,
+        0.5,
+        0.4984375,
+        0.4703125,
+        0.509375
+      ],
+      "mean_accuracy": 0.49624999999999997,
+      "std_accuracy": 0.013499131916534485
+    },
+    "xgboost_te": {
+      "fold_scores": [
+        0.38125,
+        0.365625,
+        0.4046875,
+        0.3984375,
+        0.4
+      ],
+      "mean_accuracy": 0.38999999999999996,
+      "std_accuracy": 0.01454384534777513
+    },
+    "histgb_te": {
+      "fold_scores": [
+        0.384375,
+        0.3890625,
+        0.396875,
+        0.3921875,
+        0.3953125
+      ],
+      "mean_accuracy": 0.3915625,
+      "std_accuracy": 0.004485218779502281
+    }
+  },
+  "best_baseline_name": "xgboost_baseline",
+  "best_baseline": {
+    "fold_scores": [
+      0.5171875,
+      0.503125,
+      0.503125,
+      0.475,
+      0.5109375
+    ],
+    "mean_accuracy": 0.5018750000000001,
+    "std_accuracy": 0.01443601182806389
+  },
+  "best_candidate_name": "histgb_te",
+  "best_candidate": {
+    "fold_scores": [
+      0.384375,
+      0.3890625,
+      0.396875,
+      0.3921875,
+      0.3953125
+    ],
+    "mean_accuracy": 0.3915625,
+    "std_accuracy": 0.004485218779502281
+  },
+  "beats_same_seed_baseline": false,
+  "beats_reference_baseline": false,
+  "leakage_precautions": [
+    "Target encodings are computed inside each CV training fold only.",
+    "Validation rows use mappings learned from training-fold rows only.",
+    "Unseen kelas values fall back to fold/global class probabilities.",
+    "Full-train encoding is used only after CV for optional test submission generation."
+  ],
+  "submission_path": null,
+  "submission_validated": false,
+  "submission_prediction_counts": null,
+  "no_kaggle_submission_made": true
+}

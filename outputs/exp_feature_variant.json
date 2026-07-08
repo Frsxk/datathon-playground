@@ -1,0 +1,60 @@
+{
+  "experiment": "feature_variant",
+  "description": "Sequence/assignment features: log transforms, ratios, CV-safe transforms beyond baseline",
+  "generated_at": "2026-07-08T08:03:47.094648+00:00",
+  "random_state": 43,
+  "cv": "StratifiedKFold(n_splits=5, shuffle=True, random_state=43)",
+  "baseline_cv": 0.49031,
+  "feature_shape": [
+    3200,
+    124
+  ],
+  "n_new_features": 29,
+  "models_evaluated": [
+    "histgb_variant",
+    "xgboost_variant"
+  ],
+  "metrics": [
+    {
+      "name": "histgb_variant",
+      "fold_scores": [
+        0.5015625,
+        0.45625,
+        0.490625,
+        0.46875,
+        0.521875
+      ],
+      "mean_accuracy": 0.4878125,
+      "std_accuracy": 0.023310070248714395
+    },
+    {
+      "name": "xgboost_variant",
+      "fold_scores": [
+        0.5046875,
+        0.478125,
+        0.484375,
+        0.465625,
+        0.5125
+      ],
+      "mean_accuracy": 0.4890625,
+      "std_accuracy": 0.01723006094011275
+    }
+  ],
+  "best_model": {
+    "name": "xgboost_variant",
+    "fold_scores": [
+      0.5046875,
+      0.478125,
+      0.484375,
+      0.465625,
+      0.5125
+    ],
+    "mean_accuracy": 0.4890625,
+    "std_accuracy": 0.01723006094011275
+  },
+  "beats_baseline": false,
+  "submission_path": null,
+  "submission_validated": false,
+  "submission_prediction_counts": null,
+  "no_kaggle_submission_made": true
+}

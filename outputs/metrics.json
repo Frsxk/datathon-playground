@@ -1,0 +1,125 @@
+{
+  "generated_at": "2026-07-08T06:48:27.928430+00:00",
+  "competition_slug": "datathon-playground-2026",
+  "train_shape": [
+    3200,
+    43
+  ],
+  "test_shape": [
+    800,
+    42
+  ],
+  "sample_submission_shape": [
+    800,
+    2
+  ],
+  "target_counts": {
+    "0": 813,
+    "1": 796,
+    "2": 784,
+    "3": 807
+  },
+  "feature_shape_raw": [
+    3200,
+    41
+  ],
+  "feature_shape_fe": [
+    3200,
+    95
+  ],
+  "cv": "StratifiedKFold(n_splits=5, shuffle=True, random_state=42)",
+  "metrics": [
+    {
+      "name": "logreg_raw_scaled",
+      "fold_scores": [
+        0.3515625,
+        0.3328125,
+        0.303125,
+        0.353125,
+        0.3453125
+      ],
+      "mean_accuracy": 0.33718750000000003,
+      "std_accuracy": 0.018471895882664575
+    },
+    {
+      "name": "logreg_fe_scaled",
+      "fold_scores": [
+        0.5078125,
+        0.4796875,
+        0.475,
+        0.4453125,
+        0.465625
+      ],
+      "mean_accuracy": 0.47468750000000004,
+      "std_accuracy": 0.0203341231062468
+    },
+    {
+      "name": "extratrees_fe",
+      "fold_scores": [
+        0.45625,
+        0.4703125,
+        0.4640625,
+        0.4375,
+        0.45625
+      ],
+      "mean_accuracy": 0.456875,
+      "std_accuracy": 0.011030851621701749
+    },
+    {
+      "name": "randomforest_fe",
+      "fold_scores": [
+        0.4703125,
+        0.459375,
+        0.4765625,
+        0.4546875,
+        0.453125
+      ],
+      "mean_accuracy": 0.46281249999999996,
+      "std_accuracy": 0.009132274497626538
+    },
+    {
+      "name": "histgb_fe",
+      "fold_scores": [
+        0.484375,
+        0.4875,
+        0.5140625,
+        0.4734375,
+        0.4828125
+      ],
+      "mean_accuracy": 0.48843749999999997,
+      "std_accuracy": 0.013643049970589412
+    },
+    {
+      "name": "xgboost_fe",
+      "fold_scores": [
+        0.4828125,
+        0.5140625,
+        0.4953125,
+        0.4734375,
+        0.4859375
+      ],
+      "mean_accuracy": 0.49031250000000004,
+      "std_accuracy": 0.013778379803155367
+    }
+  ],
+  "best_model": {
+    "name": "xgboost_fe",
+    "fold_scores": [
+      0.4828125,
+      0.5140625,
+      0.4953125,
+      0.4734375,
+      0.4859375
+    ],
+    "mean_accuracy": 0.49031250000000004,
+    "std_accuracy": 0.013778379803155367
+  },
+  "submission_path": "/home/frxsk/kittys-workspace/datathon2026/playground/outputs/submission_baseline.csv",
+  "submission_prediction_counts": {
+    "0": 219,
+    "1": 178,
+    "2": 179,
+    "3": 224
+  },
+  "no_kaggle_submission_made": true
+}
