@@ -1,0 +1,42 @@
+{
+  "experiment": "tune_blend_optuna",
+  "generated_at": "2026-07-08T10:30:56.266136+00:00",
+  "n_trials": 2,
+  "sampler_seed": 2026,
+  "tune_seeds": [
+    42,
+    43,
+    44
+  ],
+  "val_seeds": [
+    45,
+    46
+  ],
+  "baseline_v2_ref": 0.5127,
+  "best_params": {
+    "reg_n_estimators": 500,
+    "reg_max_depth": 3,
+    "reg_learning_rate": 0.07620609736150992,
+    "reg_subsample": 0.6355596086592517,
+    "reg_colsample_bytree": 0.7396449298400908,
+    "reg_min_child_weight": 12,
+    "reg_lambda": 1.1888465341135088,
+    "reg_alpha": 2.735145545535824,
+    "reg_gamma": 0.33495006891951495,
+    "clf_n_estimators": 900,
+    "clf_max_depth": 3,
+    "clf_learning_rate": 0.02284538855985414,
+    "clf_subsample": 0.7183869258761691,
+    "clf_colsample_bytree": 0.94704423050725,
+    "clf_min_child_weight": 1,
+    "clf_lambda": 2.670405856581513,
+    "clf_alpha": 1.6856816676072164,
+    "clf_gamma": 0.21822877815939726,
+    "blend_w": 0.6166958479695727
+  },
+  "tune_seed_accuracy": 0.5236458333333333,
+  "val_seed_accuracy": 0.5231250000000001,
+  "all_seed_accuracy": 0.5234375,
+  "tune_minus_val_gap": 0.0005208333333331927,
+  "no_kaggle_submission_made": true
+}

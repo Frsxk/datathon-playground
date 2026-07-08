@@ -1,0 +1,227 @@
+{
+  "experiment": "explore_score_estimators",
+  "generated_at": "2026-07-08T10:34:20.579615+00:00",
+  "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "baseline_v2_ref": 0.5127,
+  "single_estimator_accuracy": {
+    "xgb_reg": 0.50575,
+    "xgb_ev": 0.5084375,
+    "hgb_reg": 0.49868749999999995,
+    "hgb_ev": 0.5023125,
+    "ridge": 0.49806249999999996,
+    "logit_ev": 0.495875
+  },
+  "current_v2_pair_accuracy": 0.5125625,
+  "best_blend": {
+    "subset": [
+      "xgb_reg",
+      "hgb_ev",
+      "ridge"
+    ],
+    "mean_accuracy": 0.5158125,
+    "std": 0.0027286099941178825
+  },
+  "top_blends": [
+    {
+      "subset": [
+        "xgb_reg",
+        "hgb_ev",
+        "ridge"
+      ],
+      "mean_accuracy": 0.5158125,
+      "std": 0.0027286099941178825
+    },
+    {
+      "subset": [
+        "xgb_reg",
+        "xgb_ev",
+        "hgb_ev",
+        "ridge",
+        "logit_ev"
+      ],
+      "mean_accuracy": 0.5155,
+      "std": 0.00411077091310132
+    },
+    {
+      "subset": [
+        "xgb_reg",
+        "xgb_ev",
+        "hgb_ev",
+        "logit_ev"
+      ],
+      "mean_accuracy": 0.5151249999999999,
+      "std": 0.0032391646299624885
+    },
+    {
+      "subset": [
+        "xgb_ev",
+        "hgb_ev",
+        "logit_ev"
+      ],
+      "mean_accuracy": 0.5145625,
+      "std": 0.0026115728019720074
+    },
+    {
+      "subset": [
+        "xgb_reg",
+        "xgb_ev",
+        "hgb_reg",
+        "hgb_ev",
+        "ridge",
+        "logit_ev"
+      ],
+      "mean_accuracy": 0.51425,
+      "std": 0.004535450639131698
+    },
+    {
+      "subset": [
+        "xgb_reg",
+        "xgb_ev",
+        "hgb_ev"
+      ],
+      "mean_accuracy": 0.5141875,
+      "std": 0.0034266875404681926
+    },
+    {
+      "subset": [
+        "xgb_reg",
+        "xgb_ev",
+        "hgb_ev",
+        "ridge"
+      ],
+      "mean_accuracy": 0.5141875,
+      "std": 0.004939477452119835
+    },
+    {
+      "subset": [
+        "xgb_ev",
+        "hgb_reg",
+        "hgb_ev",
+        "ridge"
+      ],
+      "mean_accuracy": 0.5140625,
+      "std": 0.00366571957465381
+    },
+    {
+      "subset": [
+        "xgb_ev",
+        "hgb_reg",
+        "hgb_ev",
+        "logit_ev"
+      ],
+      "mean_accuracy": 0.514,
+      "std": 0.0029540755745241084
+    },
+    {
+      "subset": [
+        "xgb_reg",
+        "xgb_ev",
+        "hgb_reg",
+        "hgb_ev",
+        "ridge"
+      ],
+      "mean_accuracy": 0.5139374999999999,
+      "std": 0.0034663561559655255
+    },
+    {
+      "subset": [
+        "xgb_ev",
+        "hgb_reg",
+        "hgb_ev",
+        "ridge",
+        "logit_ev"
+      ],
+      "mean_accuracy": 0.513875,
+      "std": 0.004153311931459049
+    },
+    {
+      "subset": [
+        "xgb_reg",
+        "hgb_ev",
+        "logit_ev"
+      ],
+      "mean_accuracy": 0.5135,
+      "std": 0.0016932771480180026
+    },
+    {
+      "subset": [
+        "xgb_reg",
+        "xgb_ev",
+        "logit_ev"
+      ],
+      "mean_accuracy": 0.513125,
+      "std": 0.0025155764746872624
+    },
+    {
+      "subset": [
+        "xgb_ev",
+        "hgb_ev",
+        "ridge"
+      ],
+      "mean_accuracy": 0.5131249999999999,
+      "std": 0.002146945504664682
+    },
+    {
+      "subset": [
+        "hgb_reg",
+        "hgb_ev",
+        "logit_ev"
+      ],
+      "mean_accuracy": 0.5129374999999999,
+      "std": 0.0024890384689674624
+    },
+    {
+      "subset": [
+        "xgb_reg",
+        "xgb_ev",
+        "hgb_reg",
+        "hgb_ev",
+        "logit_ev"
+      ],
+      "mean_accuracy": 0.5129374999999999,
+      "std": 0.003208874413248338
+    },
+    {
+      "subset": [
+        "xgb_reg",
+        "hgb_reg",
+        "hgb_ev",
+        "ridge"
+      ],
+      "mean_accuracy": 0.5127499999999999,
+      "std": 0.0026398390102428514
+    },
+    {
+      "subset": [
+        "xgb_reg",
+        "hgb_ev"
+      ],
+      "mean_accuracy": 0.5126875,
+      "std": 0.0038860728891774274
+    },
+    {
+      "subset": [
+        "hgb_reg",
+        "hgb_ev",
+        "ridge"
+      ],
+      "mean_accuracy": 0.5126875,
+      "std": 0.002604083331999981
+    },
+    {
+      "subset": [
+        "xgb_reg",
+        "xgb_ev"
+      ],
+      "mean_accuracy": 0.5125625,
+      "std": 0.0032917985205659435
+    }
+  ],
+  "no_kaggle_submission_made": true
+}
