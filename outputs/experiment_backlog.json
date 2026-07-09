@@ -17,9 +17,15 @@
       "risk": "low",
       "requires_explicit_training_approval": false,
       "requires_submission_approval": false,
-      "planned_artifacts": ["reports/submission_diff_audit.md"],
+      "planned_artifacts": [
+        "reports/submission_diff_audit.md"
+      ],
       "command_template": ".venv/bin/python scripts/analyze_submission_diff.py --old outputs/submission_production_v2.csv --new outputs/submission_production_v3.csv",
-      "status": "planned"
+      "status": "completed",
+      "result_summary": "Generated reports/submission_diff_audit.md; v2 to v3 changed 128 predictions with signed deltas {-1: 64, +1: 64} while preserving 200/class balance.",
+      "completed_artifacts": [
+        "reports/submission_diff_audit.md"
+      ]
     },
     {
       "id": "P0-02-feature-factory-v4-dry-run",
@@ -30,9 +36,30 @@
       "risk": "low",
       "requires_explicit_training_approval": false,
       "requires_submission_approval": false,
-      "planned_artifacts": ["console feature summary"],
+      "planned_artifacts": [
+        "console feature summary"
+      ],
       "command_template": ".venv/bin/python scripts/feature_factory_v4.py --dry-run --rows 20",
       "status": "implemented_not_trained"
+    },
+    {
+      "id": "P0-03-feature-shift-audit",
+      "priority": "P0",
+      "crisp_dm_phase": "data_understanding",
+      "hypothesis": "Train/test feature-shift diagnostics identify unstable features before smoke modeling.",
+      "expected_compute": "tiny",
+      "risk": "low",
+      "requires_explicit_training_approval": false,
+      "requires_submission_approval": false,
+      "planned_artifacts": [
+        "reports/feature_shift_audit.md"
+      ],
+      "completed_artifacts": [
+        "reports/feature_shift_audit.md"
+      ],
+      "command_template": ".venv/bin/python scripts/analyze_feature_shift.py --top 30",
+      "status": "completed",
+      "result_summary": "Generated reports/feature_shift_audit.md; audited 122 features, with 1 high-shift feature (kelas_frequency), 0 medium, 121 low. All v4 scaffold features were low-shift."
     },
     {
       "id": "P1-01-boundary-aware-smoke",
@@ -43,7 +70,9 @@
       "risk": "medium",
       "requires_explicit_training_approval": true,
       "requires_submission_approval": false,
-      "planned_artifacts": ["outputs/exp_boundary_aware_smoke.json"],
+      "planned_artifacts": [
+        "outputs/exp_boundary_aware_smoke.json"
+      ],
       "command_template": ".venv/bin/python scripts/exp_boundary_aware.py --mode smoke --seeds 42 --estimators reduced",
       "promotion_rule": "Only run full CV if smoke beats production_v3 seed-42 analogue or improves boundary confusion.",
       "status": "planned"
@@ -57,7 +86,9 @@
       "risk": "medium",
       "requires_explicit_training_approval": true,
       "requires_submission_approval": false,
-      "planned_artifacts": ["outputs/exp_threshold_search_smoke.json"],
+      "planned_artifacts": [
+        "outputs/exp_threshold_search_smoke.json"
+      ],
       "command_template": ".venv/bin/python scripts/exp_threshold_search.py --mode smoke --seeds 42",
       "promotion_rule": "Promote if threshold mode improves OOF accuracy and keeps test counts within approved tolerance.",
       "status": "planned"
@@ -71,7 +102,9 @@
       "risk": "medium",
       "requires_explicit_training_approval": true,
       "requires_submission_approval": false,
-      "planned_artifacts": ["outputs/exp_rank_ensemble_smoke.json"],
+      "planned_artifacts": [
+        "outputs/exp_rank_ensemble_smoke.json"
+      ],
       "command_template": ".venv/bin/python scripts/exp_rank_ensemble.py --mode smoke --seeds 42",
       "promotion_rule": "Promote if rank blend beats current core_tuned in smoke and changes a different set of uncertain rows.",
       "status": "planned"
@@ -85,7 +118,9 @@
       "risk": "medium",
       "requires_explicit_training_approval": true,
       "requires_submission_approval": false,
-      "planned_artifacts": ["outputs/exp_boundary_aware_full.json"],
+      "planned_artifacts": [
+        "outputs/exp_boundary_aware_full.json"
+      ],
       "command_template": ".venv/bin/python scripts/exp_boundary_aware.py --mode full --seeds 42 43 44 45 46",
       "promotion_rule": "Mean CV >= 0.53056 or comparable mean with lower std and better class-boundary metrics.",
       "status": "planned"
@@ -99,7 +134,9 @@
       "risk": "medium_high",
       "requires_explicit_training_approval": true,
       "requires_submission_approval": false,
-      "planned_artifacts": ["outputs/tune_blend_optuna_narrow.json"],
+      "planned_artifacts": [
+        "outputs/tune_blend_optuna_narrow.json"
+      ],
       "command_template": ".venv/bin/python scripts/tune_blend_optuna_narrow.py --trials 50 --center outputs/tune_blend_optuna.json",
       "promotion_rule": "Validation seeds must not underperform tune seeds by more than 0.0015.",
       "status": "planned"
@@ -113,7 +150,10 @@
       "risk": "leaderboard quota/write action",
       "requires_explicit_training_approval": false,
       "requires_submission_approval": true,
-      "planned_artifacts": ["Kaggle submission ref", "public score"],
+      "planned_artifacts": [
+        "Kaggle submission ref",
+        "public score"
+      ],
       "command_template": "kaggle competitions submit -c datathon-playground-2026 -f outputs/<candidate>.csv -m '<message>'",
       "promotion_rule": "Only after validation output and exact command are shown to frisky.",
       "status": "blocked_on_candidate_and_approval"
