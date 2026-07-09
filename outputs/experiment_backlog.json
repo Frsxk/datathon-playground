@@ -1,0 +1,122 @@
+{
+  "metadata": {
+    "project": "datathon-playground-2026",
+    "created_by": "Kitty",
+    "purpose": "Prioritized CRISP-DM experiment backlog for accuracy improvement without auto-running compute-heavy jobs.",
+    "current_best_local_cv": 0.5285625,
+    "current_best_public_lb": 0.57916,
+    "guardrail": "Do not execute training, CV, tuning, Kaggle submission, or long jobs without explicit frisky approval."
+  },
+  "experiments": [
+    {
+      "id": "P0-01-v2-v3-submission-diff-audit",
+      "priority": "P0",
+      "crisp_dm_phase": "data_understanding",
+      "hypothesis": "Rows changed between v2 and v3 reveal boundary regions where local CV improved but public LB tied.",
+      "expected_compute": "tiny",
+      "risk": "low",
+      "requires_explicit_training_approval": false,
+      "requires_submission_approval": false,
+      "planned_artifacts": ["reports/submission_diff_audit.md"],
+      "command_template": ".venv/bin/python scripts/analyze_submission_diff.py --old outputs/submission_production_v2.csv --new outputs/submission_production_v3.csv",
+      "status": "planned"
+    },
+    {
+      "id": "P0-02-feature-factory-v4-dry-run",
+      "priority": "P0",
+      "crisp_dm_phase": "data_preparation",
+      "hypothesis": "Boundary-aware and robust sequence feature recipes can be generated deterministically without target leakage.",
+      "expected_compute": "tiny",
+      "risk": "low",
+      "requires_explicit_training_approval": false,
+      "requires_submission_approval": false,
+      "planned_artifacts": ["console feature summary"],
+      "command_template": ".venv/bin/python scripts/feature_factory_v4.py --dry-run --rows 20",
+      "status": "implemented_not_trained"
+    },
+    {
+      "id": "P1-01-boundary-aware-smoke",
+      "priority": "P1",
+      "crisp_dm_phase": "modeling",
+      "hypothesis": "Boundary-aware features improve adjacent-class decisions near quartile thresholds.",
+      "expected_compute": "small",
+      "risk": "medium",
+      "requires_explicit_training_approval": true,
+      "requires_submission_approval": false,
+      "planned_artifacts": ["outputs/exp_boundary_aware_smoke.json"],
+      "command_template": ".venv/bin/python scripts/exp_boundary_aware.py --mode smoke --seeds 42 --estimators reduced",
+      "promotion_rule": "Only run full CV if smoke beats production_v3 seed-42 analogue or improves boundary confusion.",
+      "status": "planned"
+    },
+    {
+      "id": "P1-02-threshold-search-smoke",
+      "priority": "P1",
+      "crisp_dm_phase": "modeling_evaluation",
+      "hypothesis": "Learned or near-quartile thresholds can improve CV without sacrificing class-balance plausibility.",
+      "expected_compute": "small_to_medium",
+      "risk": "medium",
+      "requires_explicit_training_approval": true,
+      "requires_submission_approval": false,
+      "planned_artifacts": ["outputs/exp_threshold_search_smoke.json"],
+      "command_template": ".venv/bin/python scripts/exp_threshold_search.py --mode smoke --seeds 42",
+      "promotion_rule": "Promote if threshold mode improves OOF accuracy and keeps test counts within approved tolerance.",
+      "status": "planned"
+    },
+    {
+      "id": "P1-03-rank-ensemble-smoke",
+      "priority": "P1",
+      "crisp_dm_phase": "modeling",
+      "hypothesis": "Blending ranks instead of raw latent scores improves robustness to score-scale drift.",
+      "expected_compute": "medium",
+      "risk": "medium",
+      "requires_explicit_training_approval": true,
+      "requires_submission_approval": false,
+      "planned_artifacts": ["outputs/exp_rank_ensemble_smoke.json"],
+      "command_template": ".venv/bin/python scripts/exp_rank_ensemble.py --mode smoke --seeds 42",
+      "promotion_rule": "Promote if rank blend beats current core_tuned in smoke and changes a different set of uncertain rows.",
+      "status": "planned"
+    },
+    {
+      "id": "P2-01-full-boundary-aware-cv",
+      "priority": "P2",
+      "crisp_dm_phase": "evaluation",
+      "hypothesis": "A boundary-aware candidate that passes smoke will hold up across seeds 42..46.",
+      "expected_compute": "large",
+      "risk": "medium",
+      "requires_explicit_training_approval": true,
+      "requires_submission_approval": false,
+      "planned_artifacts": ["outputs/exp_boundary_aware_full.json"],
+      "command_template": ".venv/bin/python scripts/exp_boundary_aware.py --mode full --seeds 42 43 44 45 46",
+      "promotion_rule": "Mean CV >= 0.53056 or comparable mean with lower std and better class-boundary metrics.",
+      "status": "planned"
+    },
+    {
+      "id": "P2-02-narrow-optuna-around-best",
+      "priority": "P2",
+      "crisp_dm_phase": "modeling_evaluation",
+      "hypothesis": "A narrow search around the 150-trial best params may improve without wasting as much compute as broad search.",
+      "expected_compute": "large",
+      "risk": "medium_high",
+      "requires_explicit_training_approval": true,
+      "requires_submission_approval": false,
+      "planned_artifacts": ["outputs/tune_blend_optuna_narrow.json"],
+      "command_template": ".venv/bin/python scripts/tune_blend_optuna_narrow.py --trials 50 --center outputs/tune_blend_optuna.json",
+      "promotion_rule": "Validation seeds must not underperform tune seeds by more than 0.0015.",
+      "status": "planned"
+    },
+    {
+      "id": "P3-01-approved-kaggle-submission",
+      "priority": "P3",
+      "crisp_dm_phase": "deployment",
+      "hypothesis": "A promoted candidate may improve public LB or provide private-score diversity.",
+      "expected_compute": "tiny",
+      "risk": "leaderboard quota/write action",
+      "requires_explicit_training_approval": false,
+      "requires_submission_approval": true,
+      "planned_artifacts": ["Kaggle submission ref", "public score"],
+      "command_template": "kaggle competitions submit -c datathon-playground-2026 -f outputs/<candidate>.csv -m '<message>'",
+      "promotion_rule": "Only after validation output and exact command are shown to frisky.",
+      "status": "blocked_on_candidate_and_approval"
+    }
+  ]
+}
