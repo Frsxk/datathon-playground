@@ -1,6 +1,6 @@
 {
   "experiment": "production_v3_tuned_diverse_quartile",
-  "generated_at": "2026-07-08T10:40:20.641768+00:00",
+  "generated_at": "2026-07-09T08:33:07.997048+00:00",
   "seeds": [
     42,
     43,
@@ -9,48 +9,48 @@
     46
   ],
   "tuned_params_source": "tune_blend_optuna.json",
-  "blend_w": 0.6166958479695727,
+  "blend_w": 0.7544216383299043,
   "candidate_cv": {
     "core_tuned": {
-      "mean": 0.5234375,
-      "std": 0.0029514297382794113,
+      "mean": 0.5285624999999999,
+      "std": 0.0032870484480761724,
       "per_seed": [
-        0.526875,
-        0.520625,
-        0.5234375,
-        0.5265625,
-        0.5196875
+        0.5309375,
+        0.528125,
+        0.5259375,
+        0.5334375,
+        0.524375
       ]
     },
     "diverse4": {
-      "mean": 0.5195,
-      "std": 0.003245188746436805,
+      "mean": 0.5209374999999999,
+      "std": 0.0020058508169851397,
       "per_seed": [
-        0.525,
-        0.515625,
-        0.516875,
-        0.52,
-        0.52
+        0.5225,
+        0.5215625,
+        0.5184375,
+        0.51875,
+        0.5234375
       ]
     },
     "explorer3": {
-      "mean": 0.5195000000000001,
-      "std": 0.002152396919715331,
+      "mean": 0.5236875,
+      "std": 0.001783167827210901,
       "per_seed": [
-        0.5228125,
-        0.52,
-        0.51625,
-        0.5184375,
-        0.52
+        0.525,
+        0.5240625,
+        0.52375,
+        0.5203125,
+        0.5253125
       ]
     }
   },
   "best_blend": "core_tuned",
-  "best_cv_mean_accuracy": 0.5234375,
+  "best_cv_mean_accuracy": 0.5285624999999999,
   "baseline_v2_ref": 0.5127,
-  "improvement_over_v2": 0.010737499999999955,
+  "improvement_over_v2": 0.01586249999999989,
   "assumption": "Test set balanced 25/25/25/25 (quartile binning).",
-  "submission_path": "D:\\Github\\datathon2026_playground\\outputs\\submission_production_v3.csv",
+  "submission_path": "/home/frxsk/kittys-workspace/datathon2026/playground/outputs/submission_production_v3.csv",
   "submission_prediction_counts": {
     "0": 200,
     "1": 200,

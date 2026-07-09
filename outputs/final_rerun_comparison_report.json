@@ -1,0 +1,30 @@
+{
+  "created_at": "2026-07-09T08:33:08.359020+00:00",
+  "elapsed_s": 1124.8121795654297,
+  "production_v3": {
+    "best_blend": "core_tuned",
+    "best_cv_mean_accuracy": 0.5285624999999999,
+    "delta_vs_previous": 0.005124999999999935,
+    "improvement_over_v2": 0.01586249999999989,
+    "previous_best_cv_mean_accuracy": 0.5234375,
+    "submission_path": "/home/frxsk/kittys-workspace/datathon2026/playground/outputs/submission_production_v3.csv",
+    "submission_prediction_counts": {
+      "0": 200,
+      "1": 200,
+      "2": 200,
+      "3": 200
+    }
+  },
+  "production_v3_log": "/home/frxsk/kittys-workspace/datathon2026/playground/outputs/rerun_logs/run_production_v3_with_report.log",
+  "production_v3_returncode": 0,
+  "status": "ok",
+  "tune": {
+    "all_seed_accuracy": 0.5285624999999999,
+    "delta_vs_previous": 0.005124999999999935,
+    "n_trials": 150,
+    "previous_all_seed_accuracy": 0.5234375,
+    "tune_minus_val_gap": -0.0005729166666667007,
+    "tune_seed_accuracy": 0.5283333333333333,
+    "val_seed_accuracy": 0.52890625
+  }
+}
