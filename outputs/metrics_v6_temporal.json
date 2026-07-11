@@ -1,0 +1,32 @@
+{
+  "experiment": "v6_ordinal_temporal_autocorr",
+  "generated_at": "2026-07-10T11:29:01.085842+00:00",
+  "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "bag": 3,
+  "feature_shape": [
+    3200,
+    51
+  ],
+  "cv_mean_accuracy": 0.6170625000000001,
+  "cv_std": 0.0034719861030827713,
+  "per_seed": [
+    0.6184,
+    0.6125,
+    0.6166,
+    0.6228,
+    0.615
+  ],
+  "prediction_counts": {
+    "0": 200,
+    "1": 200,
+    "2": 200,
+    "3": 200
+  },
+  "no_kaggle_submission_made": true
+}

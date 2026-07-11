@@ -1,0 +1,155 @@
+{
+  "seeds_note": "screen on seed42 ordinal rank",
+  "current_nfeat": 52,
+  "screen": [
+    {
+      "feature": "motiv_x_disc",
+      "spearman": 0.35447,
+      "partial_vs_current": 0.32968
+    },
+    {
+      "feature": "day_longest_high_run",
+      "spearman": -0.26721,
+      "partial_vs_current": -0.13381
+    },
+    {
+      "feature": "day_sign_changes",
+      "spearman": 0.27766,
+      "partial_vs_current": 0.10128
+    },
+    {
+      "feature": "daystd_x_compl",
+      "spearman": 0.36362,
+      "partial_vs_current": -0.03825
+    },
+    {
+      "feature": "day_entropy",
+      "spearman": 0.02973,
+      "partial_vs_current": 0.03115
+    },
+    {
+      "feature": "wk_argmax",
+      "spearman": -0.01508,
+      "partial_vs_current": -0.02618
+    },
+    {
+      "feature": "cum_argmax",
+      "spearman": 0.01688,
+      "partial_vs_current": -0.02598
+    },
+    {
+      "feature": "daymean_x_wkstd",
+      "spearman": 0.39316,
+      "partial_vs_current": -0.02372
+    },
+    {
+      "feature": "day_argmax",
+      "spearman": -0.00393,
+      "partial_vs_current": -0.02169
+    },
+    {
+      "feature": "skor_tryout_pctile",
+      "spearman": 0.1076,
+      "partial_vs_current": 0.01533
+    },
+    {
+      "feature": "skor_literasi_pctile",
+      "spearman": 0.0054,
+      "partial_vs_current": -0.01288
+    },
+    {
+      "feature": "tryout_x_wkstd",
+      "spearman": 0.40363,
+      "partial_vs_current": -0.01276
+    },
+    {
+      "feature": "literasi_x_minat",
+      "spearman": 0.00972,
+      "partial_vs_current": -0.01158
+    },
+    {
+      "feature": "wk_kurt",
+      "spearman": -0.29129,
+      "partial_vs_current": -0.01126
+    },
+    {
+      "feature": "cum_final_over_peak",
+      "spearman": 0.00771,
+      "partial_vs_current": -0.00874
+    },
+    {
+      "feature": "cum_drawdown",
+      "spearman": 0.36558,
+      "partial_vs_current": -0.0083
+    },
+    {
+      "feature": "wk_autocorr1",
+      "spearman": 0.32257,
+      "partial_vs_current": -0.00506
+    },
+    {
+      "feature": "day_trend_slope",
+      "spearman": -0.01042,
+      "partial_vs_current": -0.0044
+    },
+    {
+      "feature": "attend_x_compl",
+      "spearman": -0.02192,
+      "partial_vs_current": -0.00347
+    },
+    {
+      "feature": "wk_longest_pos_run",
+      "spearman": 0.27192,
+      "partial_vs_current": -0.00333
+    },
+    {
+      "feature": "wk_argmin",
+      "spearman": 0.01748,
+      "partial_vs_current": 0.0023
+    },
+    {
+      "feature": "skor_motivasi_pctile",
+      "spearman": 0.01276,
+      "partial_vs_current": 0.00223
+    },
+    {
+      "feature": "indeks_kehadiran_pctile",
+      "spearman": -0.01978,
+      "partial_vs_current": -0.00218
+    },
+    {
+      "feature": "wk_skew",
+      "spearman": -0.02024,
+      "partial_vs_current": -0.00159
+    },
+    {
+      "feature": "wk_longest_neg_run",
+      "spearman": 0.26551,
+      "partial_vs_current": 0.00096
+    },
+    {
+      "feature": "day_last4_minus_first4",
+      "spearman": -0.00972,
+      "partial_vs_current": 0.0008
+    },
+    {
+      "feature": "wk_sign_changes",
+      "spearman": -0.32517,
+      "partial_vs_current": 0.00028
+    }
+  ],
+  "linear_probe_partial": 0.018401681547259092,
+  "top_orthogonal": [
+    "motiv_x_disc",
+    "day_longest_high_run",
+    "day_sign_changes",
+    "daystd_x_compl",
+    "day_entropy",
+    "wk_argmax",
+    "cum_argmax",
+    "daymean_x_wkstd",
+    "day_argmax",
+    "skor_tryout_pctile"
+  ],
+  "no_kaggle_submission_made": true
+}

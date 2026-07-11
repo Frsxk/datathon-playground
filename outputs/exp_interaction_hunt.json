@@ -1,0 +1,306 @@
+{
+  "n_raw": 41,
+  "top": [
+    {
+      "pair": "nilai_minggu_03 / nilai_minggu_08",
+      "spearman": -0.182,
+      "partial": -0.056
+    },
+    {
+      "pair": "nilai_minggu_01 / nilai_minggu_08",
+      "spearman": -0.178,
+      "partial": -0.05
+    },
+    {
+      "pair": "nilai_minggu_02 / nilai_minggu_12",
+      "spearman": -0.158,
+      "partial": -0.046
+    },
+    {
+      "pair": "nilai_minggu_02 / nilai_minggu_04",
+      "spearman": 0.165,
+      "partial": 0.043
+    },
+    {
+      "pair": "nilai_minggu_04 / nilai_minggu_08",
+      "spearman": -0.157,
+      "partial": -0.043
+    },
+    {
+      "pair": "nilai_minggu_06 / nilai_minggu_08",
+      "spearman": -0.167,
+      "partial": -0.043
+    },
+    {
+      "pair": "nilai_minggu_05 / nilai_minggu_06",
+      "spearman": 0.164,
+      "partial": 0.041
+    },
+    {
+      "pair": "nilai_minggu_02 * nilai_minggu_04",
+      "spearman": 0.329,
+      "partial": 0.039
+    },
+    {
+      "pair": "nilai_minggu_03 / nilai_minggu_04",
+      "spearman": 0.167,
+      "partial": 0.039
+    },
+    {
+      "pair": "nilai_minggu_05 / nilai_minggu_08",
+      "spearman": -0.153,
+      "partial": -0.039
+    },
+    {
+      "pair": "nilai_minggu_03 * nilai_minggu_04",
+      "spearman": 0.332,
+      "partial": 0.038
+    },
+    {
+      "pair": "nilai_minggu_03 * nilai_minggu_08",
+      "spearman": -0.319,
+      "partial": -0.038
+    },
+    {
+      "pair": "nilai_minggu_04 * nilai_minggu_05",
+      "spearman": 0.336,
+      "partial": 0.038
+    },
+    {
+      "pair": "nilai_minggu_01 * nilai_minggu_03",
+      "spearman": 0.328,
+      "partial": 0.037
+    },
+    {
+      "pair": "nilai_minggu_03 * nilai_minggu_05",
+      "spearman": 0.336,
+      "partial": 0.036
+    },
+    {
+      "pair": "nilai_minggu_02 / nilai_minggu_08",
+      "spearman": -0.155,
+      "partial": -0.036
+    },
+    {
+      "pair": "nilai_minggu_04 * nilai_minggu_07",
+      "spearman": -0.294,
+      "partial": -0.035
+    },
+    {
+      "pair": "nilai_minggu_02 / nilai_minggu_06",
+      "spearman": 0.153,
+      "partial": 0.034
+    },
+    {
+      "pair": "nilai_minggu_01 * nilai_minggu_04",
+      "spearman": 0.328,
+      "partial": 0.033
+    },
+    {
+      "pair": "nilai_minggu_01 / nilai_minggu_12",
+      "spearman": -0.139,
+      "partial": -0.033
+    },
+    {
+      "pair": "nilai_minggu_03 / nilai_minggu_06",
+      "spearman": 0.159,
+      "partial": 0.033
+    },
+    {
+      "pair": "nilai_minggu_02 * nilai_minggu_05",
+      "spearman": 0.327,
+      "partial": 0.03
+    },
+    {
+      "pair": "skor_motivasi * skor_kedisiplinan",
+      "spearman": 0.354,
+      "partial": 0.03
+    },
+    {
+      "pair": "nilai_minggu_02 * nilai_minggu_03",
+      "spearman": 0.325,
+      "partial": 0.029
+    },
+    {
+      "pair": "nilai_minggu_03 * nilai_minggu_06",
+      "spearman": 0.32,
+      "partial": 0.029
+    },
+    {
+      "pair": "nilai_minggu_10 * nilai_minggu_11",
+      "spearman": 0.254,
+      "partial": -0.029
+    },
+    {
+      "pair": "nilai_minggu_04 / nilai_minggu_06",
+      "spearman": 0.143,
+      "partial": 0.029
+    },
+    {
+      "pair": "nilai_minggu_01 * nilai_minggu_02",
+      "spearman": 0.322,
+      "partial": 0.028
+    },
+    {
+      "pair": "nilai_minggu_03 / nilai_minggu_12",
+      "spearman": -0.139,
+      "partial": -0.028
+    },
+    {
+      "pair": "nilai_minggu_04 / nilai_minggu_07",
+      "spearman": -0.147,
+      "partial": -0.028
+    },
+    {
+      "pair": "nilai_minggu_01 * nilai_minggu_05",
+      "spearman": 0.328,
+      "partial": 0.027
+    },
+    {
+      "pair": "nilai_minggu_01 * nilai_minggu_08",
+      "spearman": -0.312,
+      "partial": -0.027
+    },
+    {
+      "pair": "nilai_minggu_05 * nilai_minggu_08",
+      "spearman": -0.32,
+      "partial": -0.027
+    },
+    {
+      "pair": "nilai_minggu_04 * nilai_minggu_06",
+      "spearman": 0.321,
+      "partial": 0.026
+    },
+    {
+      "pair": "nilai_minggu_02 / nilai_minggu_10",
+      "spearman": -0.147,
+      "partial": -0.026
+    },
+    {
+      "pair": "nilai_minggu_04 / nilai_minggu_11",
+      "spearman": -0.132,
+      "partial": -0.026
+    },
+    {
+      "pair": "nilai_minggu_10 * nilai_minggu_12",
+      "spearman": 0.269,
+      "partial": -0.025
+    },
+    {
+      "pair": "nilai_minggu_02 / nilai_minggu_05",
+      "spearman": 0.165,
+      "partial": 0.025
+    },
+    {
+      "pair": "aktivitas_hari_03 - tugas_selesai",
+      "spearman": -0.164,
+      "partial": 0.025
+    },
+    {
+      "pair": "nilai_minggu_02 * nilai_minggu_06",
+      "spearman": 0.325,
+      "partial": 0.024
+    },
+    {
+      "pair": "nilai_minggu_02 / nilai_minggu_07",
+      "spearman": -0.15,
+      "partial": -0.024
+    },
+    {
+      "pair": "nilai_minggu_06 / nilai_minggu_12",
+      "spearman": -0.134,
+      "partial": -0.024
+    },
+    {
+      "pair": "tugas_selesai - skor_tryout",
+      "spearman": 0.128,
+      "partial": -0.024
+    },
+    {
+      "pair": "nilai_minggu_05 * nilai_minggu_10",
+      "spearman": -0.287,
+      "partial": 0.023
+    },
+    {
+      "pair": "nilai_minggu_01 / nilai_minggu_10",
+      "spearman": -0.135,
+      "partial": -0.023
+    },
+    {
+      "pair": "nilai_minggu_02 * nilai_minggu_07",
+      "spearman": -0.285,
+      "partial": -0.022
+    },
+    {
+      "pair": "nilai_minggu_01 / nilai_minggu_06",
+      "spearman": 0.135,
+      "partial": 0.022
+    },
+    {
+      "pair": "aktivitas_hari_16 - tugas_selesai",
+      "spearman": -0.18,
+      "partial": -0.022
+    },
+    {
+      "pair": "nilai_minggu_02 * nilai_minggu_08",
+      "spearman": -0.301,
+      "partial": -0.021
+    },
+    {
+      "pair": "nilai_minggu_05 * nilai_minggu_07",
+      "spearman": -0.295,
+      "partial": -0.021
+    },
+    {
+      "pair": "nilai_minggu_01 * nilai_minggu_07",
+      "spearman": -0.281,
+      "partial": -0.02
+    },
+    {
+      "pair": "nilai_minggu_03 * nilai_minggu_07",
+      "spearman": -0.292,
+      "partial": -0.02
+    },
+    {
+      "pair": "nilai_minggu_05 * nilai_minggu_06",
+      "spearman": 0.326,
+      "partial": 0.02
+    },
+    {
+      "pair": "nilai_minggu_01 / nilai_minggu_11",
+      "spearman": -0.143,
+      "partial": -0.02
+    },
+    {
+      "pair": "nilai_minggu_06 / nilai_minggu_11",
+      "spearman": -0.125,
+      "partial": -0.02
+    },
+    {
+      "pair": "aktivitas_hari_14 - tugas_selesai",
+      "spearman": -0.159,
+      "partial": 0.02
+    },
+    {
+      "pair": "nilai_minggu_01 * nilai_minggu_06",
+      "spearman": 0.316,
+      "partial": 0.019
+    },
+    {
+      "pair": "nilai_minggu_01 * nilai_minggu_09",
+      "spearman": -0.303,
+      "partial": -0.018
+    },
+    {
+      "pair": "nilai_minggu_05 * nilai_minggu_09",
+      "spearman": -0.313,
+      "partial": -0.018
+    },
+    {
+      "pair": "aktivitas_hari_01 - tugas_selesai",
+      "spearman": -0.183,
+      "partial": -0.018
+    }
+  ],
+  "no_kaggle_submission_made": true
+}

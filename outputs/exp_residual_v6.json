@@ -1,0 +1,91 @@
+{
+  "v6_oof_acc_seed42": 0.6171875,
+  "candidates": [
+    {
+      "name": "wac1_x_mk",
+      "spearman": 0.266,
+      "partial": 0.03
+    },
+    {
+      "name": "day_ac_l8",
+      "spearman": -0.035,
+      "partial": -0.03
+    },
+    {
+      "name": "day_ac_l10",
+      "spearman": 0.118,
+      "partial": 0.025
+    },
+    {
+      "name": "wstd_x_dac3",
+      "spearman": 0.248,
+      "partial": 0.024
+    },
+    {
+      "name": "wk_2diff_std",
+      "spearman": 0.145,
+      "partial": -0.022
+    },
+    {
+      "name": "dac3_over_dac1",
+      "spearman": 0.29,
+      "partial": 0.021
+    },
+    {
+      "name": "wac1_x_dac3",
+      "spearman": 0.171,
+      "partial": 0.02
+    },
+    {
+      "name": "dac3_x_mk",
+      "spearman": -0.127,
+      "partial": -0.015
+    },
+    {
+      "name": "wk_ac_l9",
+      "spearman": -0.241,
+      "partial": 0.015
+    },
+    {
+      "name": "day_2diff_std",
+      "spearman": 0.219,
+      "partial": 0.013
+    },
+    {
+      "name": "wac1_x_compl",
+      "spearman": 0.459,
+      "partial": 0.008
+    },
+    {
+      "name": "wk_ac_l8",
+      "spearman": -0.262,
+      "partial": 0.007
+    },
+    {
+      "name": "day_ac_l7",
+      "spearman": 0.024,
+      "partial": -0.006
+    },
+    {
+      "name": "dac2_x_dac4",
+      "spearman": -0.217,
+      "partial": -0.005
+    },
+    {
+      "name": "wk_ac_l7",
+      "spearman": -0.285,
+      "partial": -0.002
+    },
+    {
+      "name": "wac1_sq",
+      "spearman": 0.301,
+      "partial": 0.002
+    },
+    {
+      "name": "day_ac_l9",
+      "spearman": -0.015,
+      "partial": 0.001
+    }
+  ],
+  "no_kaggle_submission_made": true
+}

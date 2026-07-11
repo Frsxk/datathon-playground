@@ -1,0 +1,38 @@
+{
+  "experiment": "v4_ordinal_plus_discovered_interaction",
+  "generated_at": "2026-07-10T11:36:28.122651+00:00",
+  "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "bag": 3,
+  "feature_shape": [
+    3200,
+    56
+  ],
+  "new_features": [
+    "motiv_x_disc",
+    "day_sign_changes",
+    "day_longest_high_run",
+    "day_entropy"
+  ],
+  "cv_mean_accuracy": 0.580125,
+  "cv_std": 0.0017410485346480305,
+  "per_seed": [
+    0.5781,
+    0.5794,
+    0.5788,
+    0.5819,
+    0.5825
+  ],
+  "prediction_counts": {
+    "0": 200,
+    "1": 200,
+    "2": 200,
+    "3": 200
+  },
+  "no_kaggle_submission_made": true
+}
