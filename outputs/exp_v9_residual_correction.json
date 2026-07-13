@@ -1,0 +1,266 @@
+{
+  "experiment": "v9_fold_safe_residual_correction",
+  "generated_at": "2026-07-13T04:09:37.823276+00:00",
+  "cache": "outputs/v8_v7_scores.npz",
+  "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "methods": [
+    "ridge",
+    "hgb"
+  ],
+  "alphas": [
+    0.0,
+    0.05,
+    0.1,
+    0.15,
+    0.2,
+    0.3,
+    0.4
+  ],
+  "features": [
+    "abschg_x_compl",
+    "vol_x_compl",
+    "range_x_compl",
+    "minggu_std",
+    "minggu_iqr",
+    "minggu_range",
+    "abs_change_mean",
+    "abs_change_sum",
+    "cum_std",
+    "cum_range",
+    "tryout_x_compl",
+    "compl_ratio",
+    "minggu_min",
+    "day_ac_l1",
+    "day_ac_l2",
+    "day_ac_l4",
+    "day_ac_l6",
+    "wk_ac_l1",
+    "wk_ac_l2",
+    "wk_ac_l4",
+    "wk_ac_l6",
+    "wk_ar1_ols",
+    "wk_pacf1",
+    "urutan_ujian"
+  ],
+  "baseline": {
+    "method": "ridge",
+    "alpha": 0.0,
+    "mean_accuracy": 0.6221875,
+    "std_accuracy": 0.004722783871828141,
+    "per_seed_accuracy": [
+      0.621563,
+      0.613437,
+      0.62625,
+      0.62625,
+      0.623437
+    ]
+  },
+  "best": {
+    "method": "ridge",
+    "alpha": 0.0,
+    "mean_accuracy": 0.6221875,
+    "std_accuracy": 0.004722783871828141,
+    "per_seed_accuracy": [
+      0.621563,
+      0.613437,
+      0.62625,
+      0.62625,
+      0.623437
+    ]
+  },
+  "improvement_over_baseline": 0.0,
+  "results": [
+    {
+      "method": "ridge",
+      "alpha": 0.0,
+      "mean_accuracy": 0.6221875,
+      "std_accuracy": 0.004722783871828141,
+      "per_seed_accuracy": [
+        0.621563,
+        0.613437,
+        0.62625,
+        0.62625,
+        0.623437
+      ]
+    },
+    {
+      "method": "ridge",
+      "alpha": 0.05,
+      "mean_accuracy": 0.621875,
+      "std_accuracy": 0.004941058844013104,
+      "per_seed_accuracy": [
+        0.62125,
+        0.612812,
+        0.625,
+        0.627188,
+        0.623125
+      ]
+    },
+    {
+      "method": "ridge",
+      "alpha": 0.1,
+      "mean_accuracy": 0.6215625,
+      "std_accuracy": 0.005161455705515672,
+      "per_seed_accuracy": [
+        0.620625,
+        0.611875,
+        0.624375,
+        0.625625,
+        0.625313
+      ]
+    },
+    {
+      "method": "ridge",
+      "alpha": 0.15,
+      "mean_accuracy": 0.6214999999999999,
+      "std_accuracy": 0.005363359488231228,
+      "per_seed_accuracy": [
+        0.620313,
+        0.611563,
+        0.624062,
+        0.625313,
+        0.62625
+      ]
+    },
+    {
+      "method": "ridge",
+      "alpha": 0.2,
+      "mean_accuracy": 0.6216875,
+      "std_accuracy": 0.004799088455113122,
+      "per_seed_accuracy": [
+        0.620625,
+        0.612812,
+        0.62375,
+        0.625625,
+        0.625625
+      ]
+    },
+    {
+      "method": "ridge",
+      "alpha": 0.3,
+      "mean_accuracy": 0.620375,
+      "std_accuracy": 0.004598743034786793,
+      "per_seed_accuracy": [
+        0.618437,
+        0.6125,
+        0.6225,
+        0.6225,
+        0.625938
+      ]
+    },
+    {
+      "method": "ridge",
+      "alpha": 0.4,
+      "mean_accuracy": 0.6204375000000001,
+      "std_accuracy": 0.005163725641433718,
+      "per_seed_accuracy": [
+        0.619687,
+        0.61125,
+        0.622812,
+        0.621563,
+        0.626875
+      ]
+    },
+    {
+      "method": "hgb",
+      "alpha": 0.0,
+      "mean_accuracy": 0.6221875,
+      "std_accuracy": 0.004722783871828141,
+      "per_seed_accuracy": [
+        0.621563,
+        0.613437,
+        0.62625,
+        0.62625,
+        0.623437
+      ]
+    },
+    {
+      "method": "hgb",
+      "alpha": 0.05,
+      "mean_accuracy": 0.6211875,
+      "std_accuracy": 0.005219404899028242,
+      "per_seed_accuracy": [
+        0.62,
+        0.611563,
+        0.625,
+        0.625938,
+        0.623437
+      ]
+    },
+    {
+      "method": "hgb",
+      "alpha": 0.1,
+      "mean_accuracy": 0.6214375000000001,
+      "std_accuracy": 0.005133377299595272,
+      "per_seed_accuracy": [
+        0.622188,
+        0.611563,
+        0.625625,
+        0.625313,
+        0.6225
+      ]
+    },
+    {
+      "method": "hgb",
+      "alpha": 0.15,
+      "mean_accuracy": 0.6211249999999999,
+      "std_accuracy": 0.004790941974184191,
+      "per_seed_accuracy": [
+        0.620313,
+        0.612187,
+        0.625625,
+        0.624062,
+        0.623437
+      ]
+    },
+    {
+      "method": "hgb",
+      "alpha": 0.2,
+      "mean_accuracy": 0.6206250000000001,
+      "std_accuracy": 0.00441499575311232,
+      "per_seed_accuracy": [
+        0.618125,
+        0.613125,
+        0.625,
+        0.623437,
+        0.623437
+      ]
+    },
+    {
+      "method": "hgb",
+      "alpha": 0.3,
+      "mean_accuracy": 0.6198124999999999,
+      "std_accuracy": 0.004172079817069655,
+      "per_seed_accuracy": [
+        0.616563,
+        0.613437,
+        0.624687,
+        0.621563,
+        0.622812
+      ]
+    },
+    {
+      "method": "hgb",
+      "alpha": 0.4,
+      "mean_accuracy": 0.6173124999999999,
+      "std_accuracy": 0.004058170770186957,
+      "per_seed_accuracy": [
+        0.615313,
+        0.610313,
+        0.619687,
+        0.619687,
+        0.621563
+      ]
+    }
+  ],
+  "candidate": null,
+  "selection_rule": "highest nested-OOF mean accuracy; lower std and smaller alpha break ties",
+  "exact_quartile_balancing": true,
+  "no_kaggle_submission_made": true
+}
