@@ -1,0 +1,98 @@
+{
+  "experiment": "fold_safe_same_label_sequence_mixup",
+  "generated_at": "2026-07-13T02:43:45.230777+00:00",
+  "mode": "smoke",
+  "seeds": [
+    42
+  ],
+  "factors": [
+    0.0,
+    0.25,
+    0.5
+  ],
+  "generator": "same-target donor interpolation; sequence-preserving; task-constraint repair",
+  "results": [
+    {
+      "factor": 0.0,
+      "seed": 42,
+      "accuracy": 0.623125,
+      "synthetic_rows_per_fold": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "mean_synthetic_rows": 0.0,
+      "prediction_counts": {
+        "0": 800,
+        "1": 800,
+        "2": 800,
+        "3": 800
+      }
+    },
+    {
+      "factor": 0.25,
+      "seed": 42,
+      "accuracy": 0.616875,
+      "synthetic_rows_per_fold": [
+        640,
+        640,
+        640,
+        640,
+        640
+      ],
+      "mean_synthetic_rows": 640.0,
+      "prediction_counts": {
+        "0": 800,
+        "1": 800,
+        "2": 800,
+        "3": 800
+      }
+    },
+    {
+      "factor": 0.5,
+      "seed": 42,
+      "accuracy": 0.623125,
+      "synthetic_rows_per_fold": [
+        1280,
+        1280,
+        1280,
+        1280,
+        1280
+      ],
+      "mean_synthetic_rows": 1280.0,
+      "prediction_counts": {
+        "0": 800,
+        "1": 800,
+        "2": 800,
+        "3": 800
+      }
+    }
+  ],
+  "grouped": {
+    "0.0": {
+      "mean_accuracy": 0.623125,
+      "std_accuracy": 0.0,
+      "per_seed": [
+        0.623125
+      ]
+    },
+    "0.25": {
+      "mean_accuracy": 0.616875,
+      "std_accuracy": 0.0,
+      "per_seed": [
+        0.616875
+      ]
+    },
+    "0.5": {
+      "mean_accuracy": 0.623125,
+      "std_accuracy": 0.0,
+      "per_seed": [
+        0.623125
+      ]
+    }
+  },
+  "baseline_factor": 0.0,
+  "no_kaggle_submission_made": true
+}
