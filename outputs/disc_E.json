@@ -1,0 +1,315 @@
+{
+  "candidates": [
+    {
+      "name": "d_bestperiod",
+      "spearman": -0.38255040285397346,
+      "partial": -0.05447315545337558
+    },
+    {
+      "name": "d_p3_over_p2",
+      "spearman": 0.11201041716846223,
+      "partial": 0.042984644653861946
+    },
+    {
+      "name": "d_p2_frac",
+      "spearman": 0.00172116219777956,
+      "partial": -0.03728126014587327
+    },
+    {
+      "name": "d_domfreq",
+      "spearman": 0.3313168920250574,
+      "partial": 0.034549618444822
+    },
+    {
+      "name": "d_domperiod",
+      "spearman": -0.3313168920250574,
+      "partial": -0.034549618444822
+    },
+    {
+      "name": "d_phase4_raw",
+      "spearman": -0.02395680715068801,
+      "partial": -0.03330014717835028
+    },
+    {
+      "name": "d_spread",
+      "spearman": -0.09509990612683121,
+      "partial": -0.024549811889391548
+    },
+    {
+      "name": "d_phase3_raw",
+      "spearman": -0.008101252953142284,
+      "partial": 0.02366135257514353
+    },
+    {
+      "name": "dw_domperiod_diff",
+      "spearman": -0.3938579146836962,
+      "partial": -0.023509516908484684
+    },
+    {
+      "name": "d_phase4_sin",
+      "spearman": -0.0045513859744813045,
+      "partial": -0.023418795721390308
+    },
+    {
+      "name": "d_phase2_raw",
+      "spearman": 0.00954089379195935,
+      "partial": -0.021193752536043067
+    },
+    {
+      "name": "w_phase4_cos",
+      "spearman": 0.002324610951088872,
+      "partial": 0.021075423647507835
+    },
+    {
+      "name": "w_p3_over_p2",
+      "spearman": 0.008330947204084536,
+      "partial": 0.020385564706753272
+    },
+    {
+      "name": "w_p2_frac",
+      "spearman": -0.1372601128478442,
+      "partial": -0.020182095368011563
+    },
+    {
+      "name": "w_spread",
+      "spearman": -0.11438526581478672,
+      "partial": -0.018438908427833262
+    },
+    {
+      "name": "w_phase4_sin",
+      "spearman": 0.013260033033897362,
+      "partial": -0.018073805033369104
+    },
+    {
+      "name": "d_p3_over_p4",
+      "spearman": 0.01068760080086791,
+      "partial": 0.01725562176272291
+    },
+    {
+      "name": "d_phase3_cos",
+      "spearman": -0.04199314026479734,
+      "partial": -0.016599855459543914
+    },
+    {
+      "name": "d_p3_frac",
+      "spearman": 0.22910703697887844,
+      "partial": 0.016008199725919523
+    },
+    {
+      "name": "d_phase2_sin",
+      "spearman": 0.002060228908983129,
+      "partial": -0.015898504629238502
+    },
+    {
+      "name": "d_phase1_cos",
+      "spearman": 0.010929617350878886,
+      "partial": 0.01465996972996846
+    },
+    {
+      "name": "w_phase3_raw",
+      "spearman": 0.03774981569646961,
+      "partial": 0.01368732160912848
+    },
+    {
+      "name": "w_phase3_sin",
+      "spearman": -0.01921549015387817,
+      "partial": 0.013512485499235019
+    },
+    {
+      "name": "w_phase4_raw",
+      "spearman": 0.008181208103745041,
+      "partial": -0.013426365744440567
+    },
+    {
+      "name": "d_p4_frac",
+      "spearman": 0.1452993344722543,
+      "partial": -0.013335891841863196
+    },
+    {
+      "name": "d_dompow_frac",
+      "spearman": 0.003923594916238617,
+      "partial": 0.012952676217775719
+    },
+    {
+      "name": "w_meanrun",
+      "spearman": 0.3178705214336858,
+      "partial": 0.012869562472112376
+    },
+    {
+      "name": "w_signchanges",
+      "spearman": -0.3178705214336858,
+      "partial": -0.012869562472112375
+    },
+    {
+      "name": "w_phase1_raw",
+      "spearman": 0.018861465451476836,
+      "partial": 0.011992162558884707
+    },
+    {
+      "name": "d_phase1_sin",
+      "spearman": -0.003210191706908649,
+      "partial": -0.011128101976664492
+    },
+    {
+      "name": "w_bestperiod_powfrac",
+      "spearman": -0.2965806973200946,
+      "partial": 0.009823808993766493
+    },
+    {
+      "name": "d_p6_frac",
+      "spearman": -0.28633232318452456,
+      "partial": -0.009697179417234119
+    },
+    {
+      "name": "w_p3_frac",
+      "spearman": -0.19309224265915267,
+      "partial": 0.009046353579354072
+    },
+    {
+      "name": "w_phase1_sin",
+      "spearman": 0.001265697057822677,
+      "partial": 0.008869342936808225
+    },
+    {
+      "name": "d_entropy",
+      "spearman": 0.003113390230808838,
+      "partial": -0.008581209464770857
+    },
+    {
+      "name": "w_bestperiod",
+      "spearman": -0.002981442132294955,
+      "partial": 0.007231447412733606
+    },
+    {
+      "name": "w_p4_frac",
+      "spearman": -0.035243009495432076,
+      "partial": 0.007138870517547896
+    },
+    {
+      "name": "w_centroid",
+      "spearman": -0.2967822146990113,
+      "partial": -0.007038001286663061
+    },
+    {
+      "name": "d_bestperiod_powfrac",
+      "spearman": -0.03431293405654287,
+      "partial": 0.005745921705498807
+    },
+    {
+      "name": "dw_centroid_prod",
+      "spearman": -0.12759555788773752,
+      "partial": -0.005688305545026081
+    },
+    {
+      "name": "w_phase2_cos",
+      "spearman": 0.01209065108868818,
+      "partial": -0.005112585958745968
+    },
+    {
+      "name": "d_phase2_cos",
+      "spearman": 0.011714795238496297,
+      "partial": -0.0049902368013401
+    },
+    {
+      "name": "w_phase2_raw",
+      "spearman": -0.0008793071038452805,
+      "partial": -0.003999250883259444
+    },
+    {
+      "name": "w_p3_over_p4",
+      "spearman": -0.1427679038575801,
+      "partial": -0.003761977461655369
+    },
+    {
+      "name": "w_phase2_sin",
+      "spearman": 0.015351163731816954,
+      "partial": 0.003372428804554716
+    },
+    {
+      "name": "d_hf_frac",
+      "spearman": 0.3073709581639743,
+      "partial": 0.003271973464464529
+    },
+    {
+      "name": "d_phase1_raw",
+      "spearman": 0.00762423674413365,
+      "partial": -0.0032566239957313925
+    },
+    {
+      "name": "w_hf_frac",
+      "spearman": -0.27516757814437587,
+      "partial": -0.003197152003121167
+    },
+    {
+      "name": "d_phase4_cos",
+      "spearman": 0.002971364004950159,
+      "partial": 0.002651821418557454
+    },
+    {
+      "name": "d_phase3_sin",
+      "spearman": -0.013376883852677551,
+      "partial": -0.0025665805593152115
+    },
+    {
+      "name": "d_lowhigh",
+      "spearman": 0.27640821474206945,
+      "partial": 0.0023738255244849953
+    },
+    {
+      "name": "w_phase1_cos",
+      "spearman": 0.021974986738383995,
+      "partial": 0.0022683819935326453
+    },
+    {
+      "name": "d_centroid",
+      "spearman": 0.2787931089423433,
+      "partial": -0.0013453178863620917
+    },
+    {
+      "name": "w_p6_frac",
+      "spearman": -0.22263373167529027,
+      "partial": -0.000773055395152741
+    },
+    {
+      "name": "w_entropy",
+      "spearman": -0.28119703086171227,
+      "partial": 0.000747406171322478
+    },
+    {
+      "name": "d_signchanges",
+      "spearman": 0.27802508652215574,
+      "partial": 0.0006642987188631449
+    },
+    {
+      "name": "d_meanrun",
+      "spearman": -0.27802508652215574,
+      "partial": -0.0006642987188631436
+    },
+    {
+      "name": "w_phase3_cos",
+      "spearman": -0.0004220059656844064,
+      "partial": -0.0004799507737377509
+    },
+    {
+      "name": "w_lowhigh",
+      "spearman": -0.2306021049024657,
+      "partial": 0.0002871339399774207
+    },
+    {
+      "name": "w_domperiod",
+      "spearman": 0.24104415572623183,
+      "partial": 2.5259130911547732e-05
+    },
+    {
+      "name": "w_domfreq",
+      "spearman": -0.24104415572623183,
+      "partial": -2.52591309115363e-05
+    },
+    {
+      "name": "w_dompow_frac",
+      "spearman": 0.2894635291019117,
+      "partial": 1.8577453172495523e-05
+    }
+  ],
+  "no_kaggle_submission_made": true
+}

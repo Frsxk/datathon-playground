@@ -1,0 +1,75 @@
+{
+  "candidates": [
+    {
+      "name": "WD_1w_2d3",
+      "spearman": 0.3906991379427917,
+      "partial": 0.05489078398928949
+    },
+    {
+      "name": "D_pacf3",
+      "spearman": 0.2849507192055959,
+      "partial": 0.053131765493551086
+    },
+    {
+      "name": "WD_wkar1_plus_dpacf3",
+      "spearman": 0.42199331259253814,
+      "partial": 0.046744876075071
+    },
+    {
+      "name": "WD_wkpacf1_plus_dpacf3",
+      "spearman": 0.42378876090437106,
+      "partial": 0.04623373687941809
+    },
+    {
+      "name": "WD_wkar1_plus_dar3a3",
+      "spearman": 0.4182427951254232,
+      "partial": 0.04295773128611874
+    },
+    {
+      "name": "D_ar3_a3",
+      "spearman": 0.2798000252381896,
+      "partial": 0.04234567692121474
+    },
+    {
+      "name": "WD_wkar1_plus_d3avg",
+      "spearman": 0.4484972113506029,
+      "partial": 0.03966943882359684
+    },
+    {
+      "name": "D_lag3_avg3est",
+      "spearman": 0.32027976750236337,
+      "partial": 0.0389634670918557
+    },
+    {
+      "name": "WD_2w_1d3",
+      "spearman": 0.41483450030626334,
+      "partial": 0.033019249090845
+    },
+    {
+      "name": "WD_wkar1_plus_dols3",
+      "spearman": 0.4649339893937924,
+      "partial": 0.021000088952992636
+    },
+    {
+      "name": "D_olslag3",
+      "spearman": 0.3409733506863386,
+      "partial": 0.019289395569691736
+    },
+    {
+      "name": "D_rawac3",
+      "spearman": 0.34124586245860516,
+      "partial": 0.01600111549093829
+    },
+    {
+      "name": "W_olsar1",
+      "spearman": 0.31818287163119846,
+      "partial": 0.005233785978354823
+    },
+    {
+      "name": "W_pacf1",
+      "spearman": 0.31921908359831663,
+      "partial": 0.002723723113684143
+    }
+  ],
+  "no_kaggle_submission_made": true
+}

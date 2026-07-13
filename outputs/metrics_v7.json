@@ -1,0 +1,40 @@
+{
+  "experiment": "v7_denoised_temporal_coupling_ranker_blend",
+  "generated_at": "2026-07-12T16:49:50.374684+00:00",
+  "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "bag": 3,
+  "feature_shape": [
+    3200,
+    56
+  ],
+  "added_features": [
+    "day_domperiod",
+    "day_bestperiod",
+    "wk_ar1_ols",
+    "wk_pacf1",
+    "minat_x_coup"
+  ],
+  "ranker": "z(ord_xgb)+z(ord_hgb)+z(reg_xgb)",
+  "cv_mean_accuracy": 0.6196875000000001,
+  "cv_std": 0.0031622776601683954,
+  "per_seed": [
+    0.6216,
+    0.6141,
+    0.6234,
+    0.6191,
+    0.6203
+  ],
+  "prediction_counts": {
+    "0": 200,
+    "1": 200,
+    "2": 200,
+    "3": 200
+  },
+  "no_kaggle_submission_made": true
+}

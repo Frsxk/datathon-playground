@@ -1,0 +1,175 @@
+{
+  "candidates": [
+    {
+      "name": "mxd_x_wac_long",
+      "spearman": -0.30650458483684623,
+      "partial": -0.03366270761540316
+    },
+    {
+      "name": "mxd_x_wamp",
+      "spearman": 0.34823342046258227,
+      "partial": 0.033428722065014606
+    },
+    {
+      "name": "mxd_x_damp",
+      "spearman": 0.35407010138514816,
+      "partial": 0.03279517544677955
+    },
+    {
+      "name": "mxd_x_compl",
+      "spearman": 0.3416469135230742,
+      "partial": 0.030802556130992562
+    },
+    {
+      "name": "mxd_x_wac1",
+      "spearman": 0.2663930526444661,
+      "partial": 0.03003929502529281
+    },
+    {
+      "name": "mxd_x_skor_ekstrakurikuler",
+      "spearman": 0.00044484601092015946,
+      "partial": 0.023761394578194886
+    },
+    {
+      "name": "mxd_x_wac2",
+      "spearman": 0.24132658937236615,
+      "partial": 0.02263546733516937
+    },
+    {
+      "name": "d_ac3_h1",
+      "spearman": 0.2930956749233471,
+      "partial": 0.022568817829768675
+    },
+    {
+      "name": "mxd_x_dac3_h2",
+      "spearman": -0.13491491118471488,
+      "partial": -0.021865993361478857
+    },
+    {
+      "name": "w_ac1_h2",
+      "spearman": -0.047549327284729666,
+      "partial": -0.021028055274840397
+    },
+    {
+      "name": "d_ac3_h2",
+      "spearman": 0.2987824412848595,
+      "partial": 0.020726416505875887
+    },
+    {
+      "name": "w_ac9",
+      "spearman": -0.24312480519846158,
+      "partial": 0.019204368863643243
+    },
+    {
+      "name": "compl_x_wac1_delta",
+      "spearman": -0.04111395803139391,
+      "partial": -0.019071369159720315
+    },
+    {
+      "name": "d_amp_delta",
+      "spearman": 0.00946008267276824,
+      "partial": -0.01842411747369827
+    },
+    {
+      "name": "d_amp_ratio",
+      "spearman": 0.009727721351901147,
+      "partial": -0.017341602829387737
+    },
+    {
+      "name": "mxd_x_skor_minat_belajar",
+      "spearman": 0.007290335912277539,
+      "partial": -0.01686246838264361
+    },
+    {
+      "name": "mxd_x_dac3",
+      "spearman": -0.12760498738424353,
+      "partial": -0.01595946056748816
+    },
+    {
+      "name": "mxd_x_wac1_h2",
+      "spearman": -0.13615319653797966,
+      "partial": -0.015403995079748932
+    },
+    {
+      "name": "w_ac1_delta",
+      "spearman": -0.03442375929161996,
+      "partial": -0.013532101445839254
+    },
+    {
+      "name": "w_ac7",
+      "spearman": -0.297473047135852,
+      "partial": -0.012986245008609636
+    },
+    {
+      "name": "mxd_x_indeks_kehadiran",
+      "spearman": 0.009228950550561287,
+      "partial": -0.011285982800156113
+    },
+    {
+      "name": "mxd_x_jumlah_saudara",
+      "spearman": 0.03905307575829484,
+      "partial": 0.010729007561009186
+    },
+    {
+      "name": "mxd_x_skor_literasi",
+      "spearman": -0.002484466800840901,
+      "partial": 0.007198249548298434
+    },
+    {
+      "name": "w_level_drift",
+      "spearman": 0.0005008828014380322,
+      "partial": 0.006550869898183315
+    },
+    {
+      "name": "mxd_x_wac1_h1",
+      "spearman": -0.12454077295173713,
+      "partial": 0.0056790632004638545
+    },
+    {
+      "name": "d_level_drift",
+      "spearman": -0.0019970237199881786,
+      "partial": 0.004813769641575145
+    },
+    {
+      "name": "w_amp_ratio",
+      "spearman": 0.014667014646372704,
+      "partial": 0.004605395940709668
+    },
+    {
+      "name": "w_amp_delta",
+      "spearman": 0.013267758186367622,
+      "partial": 0.004138276303131485
+    },
+    {
+      "name": "mxd_x_jarak_rumah_km",
+      "spearman": -0.013916682923016468,
+      "partial": -0.003758225212262403
+    },
+    {
+      "name": "w_ac8",
+      "spearman": -0.2872388418098038,
+      "partial": -0.003293934779495981
+    },
+    {
+      "name": "w_ac1_h1",
+      "spearman": 0.00011418579332705507,
+      "partial": -0.0029866280842578883
+    },
+    {
+      "name": "mxd_x_wac1_delta",
+      "spearman": -0.004120179542656827,
+      "partial": -0.0025415695723895026
+    },
+    {
+      "name": "w_ac_long_mean",
+      "spearman": -0.3385687859680111,
+      "partial": -0.002383884957042176
+    },
+    {
+      "name": "d_ac3_delta",
+      "spearman": 0.005948745421807582,
+      "partial": -0.0010690231135521957
+    }
+  ],
+  "no_kaggle_submission_made": true
+}

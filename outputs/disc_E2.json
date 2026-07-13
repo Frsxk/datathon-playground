@@ -1,0 +1,100 @@
+{
+  "candidates": [
+    {
+      "name": "d_bestfreq_fine",
+      "spearman": 0.38315481505479687,
+      "partial": 0.05566132162976988
+    },
+    {
+      "name": "d_bestperiod_fine",
+      "spearman": -0.38315481505479687,
+      "partial": -0.05566132162976987
+    },
+    {
+      "name": "d_dist_from_p3_signed",
+      "spearman": -0.38315481505479687,
+      "partial": -0.05566132162976987
+    },
+    {
+      "name": "d_dist_from_p3",
+      "spearman": -0.3835387923134612,
+      "partial": -0.0545678194225915
+    },
+    {
+      "name": "d_period_x_r2",
+      "spearman": -0.3155525867064456,
+      "partial": -0.03298918347427675
+    },
+    {
+      "name": "d_parab_period",
+      "spearman": -0.3461953149396434,
+      "partial": -0.0291661043652744
+    },
+    {
+      "name": "d_parab_binfreq",
+      "spearman": 0.3461953149396434,
+      "partial": 0.0291661043652744
+    },
+    {
+      "name": "d_period_gt4",
+      "spearman": -0.3252571476105379,
+      "partial": -0.024709029755310672
+    },
+    {
+      "name": "w_bestperiod_fine",
+      "spearman": 0.042503340735922386,
+      "partial": 0.015329525380577979
+    },
+    {
+      "name": "w_bestfreq_fine",
+      "spearman": -0.042503340735922386,
+      "partial": -0.015329525380577979
+    },
+    {
+      "name": "d_r2p3_over_best",
+      "spearman": 0.1259838653548867,
+      "partial": -0.014538943224112642
+    },
+    {
+      "name": "d_bestperiod_r2",
+      "spearman": -0.003231886313591899,
+      "partial": 0.014431904559552131
+    },
+    {
+      "name": "d_r2_p3",
+      "spearman": 0.12668154485824396,
+      "partial": -0.014389602291894175
+    },
+    {
+      "name": "d_period_centroid",
+      "spearman": -0.2454857600072223,
+      "partial": 0.011282482164318229
+    },
+    {
+      "name": "w_parab_period",
+      "spearman": 0.290919451662097,
+      "partial": 0.01114173503840471
+    },
+    {
+      "name": "w_parab_binfreq",
+      "spearman": -0.290919451662097,
+      "partial": -0.011141735038404708
+    },
+    {
+      "name": "w_bestperiod_r2",
+      "spearman": -0.29670827390737575,
+      "partial": 0.01067145498208259
+    },
+    {
+      "name": "d_period_below3",
+      "spearman": 0.026311626122225665,
+      "partial": 0.0032887584825642894
+    },
+    {
+      "name": "w_period_centroid",
+      "spearman": 0.3108928141324601,
+      "partial": 0.0005044909552663284
+    }
+  ],
+  "no_kaggle_submission_made": true
+}

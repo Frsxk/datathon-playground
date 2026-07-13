@@ -1,0 +1,26 @@
+{
+  "base_cv": 0.6170625000000001,
+  "v7_cv": 0.6195,
+  "lift": 0.0024374999999999813,
+  "active": [
+    "day_domperiod",
+    "day_bestperiod",
+    "wk_ar1_ols",
+    "wk_pacf1"
+  ],
+  "per_seed": [
+    0.6219,
+    0.6144,
+    0.6178,
+    0.6194,
+    0.6241
+  ],
+  "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "no_kaggle_submission_made": true
+}

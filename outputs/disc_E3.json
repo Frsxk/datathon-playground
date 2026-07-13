@@ -1,0 +1,45 @@
+{
+  "candidates": [
+    {
+      "name": "d_bestperiod_fine",
+      "spearman": -0.38315481505479687,
+      "partial": -0.05566132162976987
+    },
+    {
+      "name": "d_autocorr_period",
+      "spearman": -0.33888489773057096,
+      "partial": -0.04137454915592176
+    },
+    {
+      "name": "d_period_consensus",
+      "spearman": -0.36321626243504973,
+      "partial": -0.03659018298304925
+    },
+    {
+      "name": "d_period_half_mean",
+      "spearman": -0.34248819987893037,
+      "partial": -0.029824715315456565
+    },
+    {
+      "name": "d_period_drift",
+      "spearman": -0.018565718087975844,
+      "partial": -0.008309042235912348
+    },
+    {
+      "name": "d_min_ac_lag",
+      "spearman": -0.12291958822480688,
+      "partial": -0.006039026998117804
+    },
+    {
+      "name": "d_cycles",
+      "spearman": 0.27802508652215574,
+      "partial": 0.0006642987188631449
+    },
+    {
+      "name": "d_eff_period_signs",
+      "spearman": -0.27802508652215574,
+      "partial": -0.0006642987188631436
+    }
+  ],
+  "no_kaggle_submission_made": true
+}

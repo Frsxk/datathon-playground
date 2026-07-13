@@ -1,0 +1,250 @@
+{
+  "candidates": [
+    {
+      "name": "abs_kehad_plus_1p2ekstra",
+      "spearman": -0.02837485699631549,
+      "partial": -0.04322517159756381
+    },
+    {
+      "name": "neg_abs_kehad_plus_ekstra",
+      "spearman": 0.02473421470804407,
+      "partial": 0.04255033470676992
+    },
+    {
+      "name": "abs_kehad_plus_ekstra",
+      "spearman": -0.02473421470804407,
+      "partial": -0.042550334706769916
+    },
+    {
+      "name": "sq_kehad_plus_ekstra",
+      "spearman": -0.02473421470804407,
+      "partial": -0.042550334706769916
+    },
+    {
+      "name": "kehad_x_ekstra",
+      "spearman": -0.028535349637241754,
+      "partial": -0.03484213405510025
+    },
+    {
+      "name": "z_kehad_x_z_ekstra",
+      "spearman": -0.028535349637241754,
+      "partial": -0.03484213405510025
+    },
+    {
+      "name": "tryout_x_kehad_signed",
+      "spearman": -0.04009211229054755,
+      "partial": -0.032683374478165016
+    },
+    {
+      "name": "tryout_x_kehad_ekstra",
+      "spearman": -0.024635024797323733,
+      "partial": -0.03201487309578391
+    },
+    {
+      "name": "motiv_x_disc",
+      "spearman": 0.3542948473738468,
+      "partial": 0.031188948462860393
+    },
+    {
+      "name": "lit_x_ekstra",
+      "spearman": -0.01808421898748524,
+      "partial": -0.026254355659431402
+    },
+    {
+      "name": "disc_x_minat",
+      "spearman": -0.02715477154647541,
+      "partial": -0.024557736117312413
+    },
+    {
+      "name": "tryout_x_compl_signed",
+      "spearman": -0.012827706421953425,
+      "partial": -0.02440996207106114
+    },
+    {
+      "name": "tryout",
+      "spearman": 0.10760050532211415,
+      "partial": 0.022093570859618245
+    },
+    {
+      "name": "z_tryout",
+      "spearman": 0.10760050532211415,
+      "partial": 0.022093570859618245
+    },
+    {
+      "name": "disc_x_ekstra",
+      "spearman": 0.02699911490576478,
+      "partial": 0.021037383056992886
+    },
+    {
+      "name": "kehad_x_saud",
+      "spearman": -0.015062960421310811,
+      "partial": 0.018883234776434235
+    },
+    {
+      "name": "minat_x_ekstra",
+      "spearman": 0.003921975354242415,
+      "partial": -0.016830841496171638
+    },
+    {
+      "name": "minat_x_saud",
+      "spearman": -0.0005789711421794356,
+      "partial": -0.013392751716093597
+    },
+    {
+      "name": "kehad_x_jarak",
+      "spearman": 0.02438004465218301,
+      "partial": -0.012081513078332693
+    },
+    {
+      "name": "jarak_x_kehad",
+      "spearman": 0.02438004465218301,
+      "partial": -0.012081513078332693
+    },
+    {
+      "name": "ekstra_x_jarak",
+      "spearman": 0.011372844491053075,
+      "partial": -0.011245228809019275
+    },
+    {
+      "name": "minat_x_kehad",
+      "spearman": 0.008834947768566019,
+      "partial": -0.010621124085160121
+    },
+    {
+      "name": "kehad_ekstra_sqdist",
+      "spearman": 0.005369823286997519,
+      "partial": -0.010590929597632992
+    },
+    {
+      "name": "saud_x_compl",
+      "spearman": -0.0054215808744651015,
+      "partial": -0.010432094712141791
+    },
+    {
+      "name": "disc_x_jarak",
+      "spearman": 0.0032205692589848626,
+      "partial": -0.010376761983636048
+    },
+    {
+      "name": "radius_kehad_ekstra",
+      "spearman": 0.005271967610709836,
+      "partial": -0.010263059986999418
+    },
+    {
+      "name": "disc_x_lit",
+      "spearman": 0.02647023752749616,
+      "partial": 0.009778413639465557
+    },
+    {
+      "name": "motiv_x_saud",
+      "spearman": 0.007966326085583612,
+      "partial": -0.009492246119711788
+    },
+    {
+      "name": "motiv_x_minat",
+      "spearman": 0.0002595651135095666,
+      "partial": 0.009321961201164202
+    },
+    {
+      "name": "tryout_x_ekstra_signed",
+      "spearman": -0.006472922556127118,
+      "partial": -0.008866929341749825
+    },
+    {
+      "name": "motiv_x_ekstra",
+      "spearman": -0.016685432255525573,
+      "partial": -0.007935553053950422
+    },
+    {
+      "name": "minat_x_jarak",
+      "spearman": -0.007063650546304841,
+      "partial": -0.007933154311110873
+    },
+    {
+      "name": "disc_x_kehad",
+      "spearman": -0.02813861702641328,
+      "partial": -0.007477552805934154
+    },
+    {
+      "name": "motiv_x_kehad",
+      "spearman": 0.023798936028148837,
+      "partial": 0.006085185681645093
+    },
+    {
+      "name": "disc_x_saud",
+      "spearman": 0.013682769950916471,
+      "partial": 0.006035914998022646
+    },
+    {
+      "name": "ekstra_x_saud",
+      "spearman": 0.0027929291461701654,
+      "partial": -0.00594771459646354
+    },
+    {
+      "name": "motiv_x_lit",
+      "spearman": 0.0035981458496343343,
+      "partial": 0.0056152046553416424
+    },
+    {
+      "name": "jarak_x_wmean",
+      "spearman": -0.003995216885590368,
+      "partial": -0.005579017437507716
+    },
+    {
+      "name": "lit_x_saud",
+      "spearman": 0.0023731666751666777,
+      "partial": -0.0050850983193653325
+    },
+    {
+      "name": "absk_plus_abse",
+      "spearman": 0.014055098612202877,
+      "partial": -0.004849226059878828
+    },
+    {
+      "name": "lit_x_minat",
+      "spearman": 0.009369305363031589,
+      "partial": 0.004332712355378273
+    },
+    {
+      "name": "lit_x_jarak",
+      "spearman": -0.002717310819526761,
+      "partial": 0.004234482543990413
+    },
+    {
+      "name": "abs_kehad_x_ekstra",
+      "spearman": 0.026391062504283417,
+      "partial": 0.004129824925322122
+    },
+    {
+      "name": "jarak_x_saud",
+      "spearman": 0.012298540426442722,
+      "partial": 0.003626133392019408
+    },
+    {
+      "name": "kehad_minus_ekstra",
+      "spearman": -0.02500248380563971,
+      "partial": -0.0026113455470734635
+    },
+    {
+      "name": "lit_x_kehad",
+      "spearman": -0.014264194670739859,
+      "partial": -0.001931473381962923
+    },
+    {
+      "name": "motiv_x_jarak",
+      "spearman": -0.01843951573722096,
+      "partial": 0.0014218480788430602
+    },
+    {
+      "name": "saud_x_amean",
+      "spearman": 0.0074836774753213415,
+      "partial": 0.0011197925724110566
+    },
+    {
+      "name": "kehad_plus_ekstra",
+      "spearman": -0.00044380767367538734,
+      "partial": -0.0003616551564670474
+    }
+  ],
+  "no_kaggle_submission_made": true
+}

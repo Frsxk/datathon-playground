@@ -1,0 +1,1225 @@
+{
+  "candidates": [
+    {
+      "name": "z(ik)*z(ek)",
+      "spearman": -0.028535349637241754,
+      "partial": -0.03484213405510025
+    },
+    {
+      "name": "indeks_kehadiran*skor_ekstrakurikuler",
+      "spearman": -0.027211451650272868,
+      "partial": -0.034444438440163906
+    },
+    {
+      "name": "-(ik*ek)",
+      "spearman": 0.027211451650272868,
+      "partial": 0.0344444384401639
+    },
+    {
+      "name": "skor_literasi*indeks_kehadiran*jumlah_saudara",
+      "spearman": -0.019290272196815544,
+      "partial": -0.03368807259556425
+    },
+    {
+      "name": "zmotiv*zdisc*sign",
+      "spearman": 0.3544757005790473,
+      "partial": 0.03147879646261782
+    },
+    {
+      "name": "skor_motivasi*skor_kedisiplinan",
+      "spearman": 0.35447344445861256,
+      "partial": 0.03147680281494829
+    },
+    {
+      "name": "skor_kedisiplinan*indeks_kehadiran*jarak_rumah_km",
+      "spearman": -0.008942274605110063,
+      "partial": -0.0310253321308593
+    },
+    {
+      "name": "sameSign(indeks_kehadiran,skor_ekstrakurikuler)",
+      "spearman": -0.02589838445717415,
+      "partial": -0.030459040974938505
+    },
+    {
+      "name": "skor_literasi*skor_ekstrakurikuler",
+      "spearman": -0.017874043413787347,
+      "partial": -0.026110429439913645
+    },
+    {
+      "name": "skor_motivasi*skor_literasi*jarak_rumah_km",
+      "spearman": -0.02465701261109321,
+      "partial": -0.025994944076551195
+    },
+    {
+      "name": "skor_literasi*skor_minat_belajar*indeks_kehadiran",
+      "spearman": -0.020821542056739813,
+      "partial": -0.02582333792065696
+    },
+    {
+      "name": "skor_kedisiplinan*skor_minat_belajar*skor_ekstrakurikuler",
+      "spearman": -0.010163590535905218,
+      "partial": -0.025501593766219688
+    },
+    {
+      "name": "skor_minat_belajar*skor_ekstrakurikuler*jarak_rumah_km",
+      "spearman": 0.02172037645273778,
+      "partial": 0.025490111060046346
+    },
+    {
+      "name": "sameSign(skor_kedisiplinan,skor_minat_belajar)",
+      "spearman": -0.025283154009283746,
+      "partial": -0.025147443211898286
+    },
+    {
+      "name": "skor_literasi*skor_ekstrakurikuler*jumlah_saudara",
+      "spearman": 0.007312521326857697,
+      "partial": -0.025061126797857762
+    },
+    {
+      "name": "skor_literasi*indeks_kehadiran*skor_ekstrakurikuler",
+      "spearman": -0.001364491523145624,
+      "partial": -0.024851674264901827
+    },
+    {
+      "name": "skor_kedisiplinan*skor_minat_belajar*indeks_kehadiran",
+      "spearman": 0.005206768732120829,
+      "partial": -0.02452584040426483
+    },
+    {
+      "name": "sameSign(indeks_kehadiran,jumlah_saudara)",
+      "spearman": -0.00917260321596886,
+      "partial": 0.024465214101054428
+    },
+    {
+      "name": "indeks_kehadiran*skor_ekstrakurikuler*jarak_rumah_km",
+      "spearman": -0.004453010354288146,
+      "partial": 0.024376893428878204
+    },
+    {
+      "name": "skor_kedisiplinan*skor_minat_belajar",
+      "spearman": -0.02668523432000609,
+      "partial": -0.024299698153003903
+    },
+    {
+      "name": "skor_motivasi*skor_kedisiplinan*skor_ekstrakurikuler",
+      "spearman": 0.00044484601092015946,
+      "partial": 0.023761394578194886
+    },
+    {
+      "name": "(motiv*disc)*skor_ekstrakurikuler",
+      "spearman": 0.00044484601092015946,
+      "partial": 0.023761394578194886
+    },
+    {
+      "name": "skor_motivasi*jarak_rumah_km*jumlah_saudara",
+      "spearman": 0.0019844336871137668,
+      "partial": -0.023103675001412576
+    },
+    {
+      "name": "sameSign(skor_kedisiplinan,skor_ekstrakurikuler)",
+      "spearman": 0.02373016458714153,
+      "partial": 0.022035041051634785
+    },
+    {
+      "name": "motiv*disc^2",
+      "spearman": -0.00487142114293815,
+      "partial": -0.02183838492019083
+    },
+    {
+      "name": "sameSign(skor_minat_belajar,jumlah_saudara)",
+      "spearman": -0.0012138380507634326,
+      "partial": -0.02152205211992732
+    },
+    {
+      "name": "skor_kedisiplinan*skor_ekstrakurikuler",
+      "spearman": 0.026968399902590045,
+      "partial": 0.02103342620079222
+    },
+    {
+      "name": "skor_kedisiplinan*skor_minat_belajar*jumlah_saudara",
+      "spearman": 0.028808043187256584,
+      "partial": 0.019795253114232945
+    },
+    {
+      "name": "skor_kedisiplinan*skor_literasi*jumlah_saudara",
+      "spearman": 0.021239109786965766,
+      "partial": 0.019281498059193113
+    },
+    {
+      "name": "skor_literasi*indeks_kehadiran*jarak_rumah_km",
+      "spearman": -0.0027487348154905983,
+      "partial": -0.019157373679101784
+    },
+    {
+      "name": "indeks_kehadiran*jumlah_saudara",
+      "spearman": -0.015230558987842648,
+      "partial": 0.01890591825686052
+    },
+    {
+      "name": "skor_kedisiplinan*jarak_rumah_km*jumlah_saudara",
+      "spearman": 0.004287646636336732,
+      "partial": 0.017806159651024948
+    },
+    {
+      "name": "sameSign(skor_kedisiplinan,skor_literasi)",
+      "spearman": 0.021577876914972267,
+      "partial": 0.017150640280599753
+    },
+    {
+      "name": "both>0(indeks_kehadiran,skor_ekstrakurikuler)",
+      "spearman": -0.028988713716183823,
+      "partial": -0.017118665789052315
+    },
+    {
+      "name": "max(skor_kedisiplinan,skor_ekstrakurikuler)",
+      "spearman": -0.006776376242420556,
+      "partial": -0.017087069509263315
+    },
+    {
+      "name": "sameSign(skor_motivasi,indeks_kehadiran)",
+      "spearman": 0.025271624027355048,
+      "partial": 0.01704264385819393
+    },
+    {
+      "name": "skor_minat_belajar*skor_ekstrakurikuler",
+      "spearman": 0.0039804303217287175,
+      "partial": -0.017012336597184277
+    },
+    {
+      "name": "skor_motivasi*skor_kedisiplinan*skor_minat_belajar",
+      "spearman": 0.007290335912277539,
+      "partial": -0.01686246838264361
+    },
+    {
+      "name": "(motiv*disc)*skor_minat_belajar",
+      "spearman": 0.007290335912277539,
+      "partial": -0.01686246838264361
+    },
+    {
+      "name": "both>0(indeks_kehadiran,jumlah_saudara)",
+      "spearman": -0.01782030156746541,
+      "partial": 0.01677138426981204
+    },
+    {
+      "name": "skor_literasi*skor_ekstrakurikuler*jarak_rumah_km",
+      "spearman": -0.018105064394026434,
+      "partial": -0.016600512165897526
+    },
+    {
+      "name": "sameSign(indeks_kehadiran,jarak_rumah_km)",
+      "spearman": 0.003169696850216577,
+      "partial": -0.015857396751057296
+    },
+    {
+      "name": "both>0(skor_motivasi,skor_ekstrakurikuler)",
+      "spearman": -0.00779546532930691,
+      "partial": -0.0158390897747289
+    },
+    {
+      "name": "skor_minat_belajar*indeks_kehadiran*skor_ekstrakurikuler",
+      "spearman": 0.020566549764851342,
+      "partial": 0.015706206500048624
+    },
+    {
+      "name": "sameSign(skor_motivasi,jumlah_saudara)",
+      "spearman": -0.0011187561109175872,
+      "partial": -0.015674891058989903
+    },
+    {
+      "name": "max(skor_motivasi,skor_kedisiplinan)",
+      "spearman": -0.127274316399603,
+      "partial": -0.015571007002156557
+    },
+    {
+      "name": "skor_ekstrakurikuler*jarak_rumah_km*jumlah_saudara",
+      "spearman": -0.03202004660647623,
+      "partial": -0.01556612425182693
+    },
+    {
+      "name": "both>0(skor_motivasi,jumlah_saudara)",
+      "spearman": 0.006795983520763238,
+      "partial": -0.01496910814555428
+    },
+    {
+      "name": "skor_motivasi*indeks_kehadiran*jarak_rumah_km",
+      "spearman": 0.0220173290372929,
+      "partial": 0.01484862771861491
+    },
+    {
+      "name": "sameSign(skor_motivasi,skor_kedisiplinan)",
+      "spearman": 0.25619009323523145,
+      "partial": 0.014647496410023126
+    },
+    {
+      "name": "min(skor_literasi,skor_ekstrakurikuler)",
+      "spearman": 0.0036060623261380967,
+      "partial": -0.014401057548921618
+    },
+    {
+      "name": "skor_kedisiplinan*skor_literasi*skor_ekstrakurikuler",
+      "spearman": -0.012678066238805382,
+      "partial": 0.0143527544339669
+    },
+    {
+      "name": "skor_kedisiplinan*skor_literasi*indeks_kehadiran",
+      "spearman": -0.0037588367741192034,
+      "partial": -0.014111066238576532
+    },
+    {
+      "name": "skor_kedisiplinan*skor_ekstrakurikuler*jarak_rumah_km",
+      "spearman": -0.01834682028863837,
+      "partial": -0.013986299761661516
+    },
+    {
+      "name": "max(skor_motivasi,skor_literasi)",
+      "spearman": -0.007503766052937557,
+      "partial": -0.01368815491199183
+    },
+    {
+      "name": "sameSign(skor_minat_belajar,skor_ekstrakurikuler)",
+      "spearman": 0.005118976707763487,
+      "partial": -0.013402750545061619
+    },
+    {
+      "name": "skor_minat_belajar*jumlah_saudara",
+      "spearman": 0.0001153412264765988,
+      "partial": -0.013339648590483087
+    },
+    {
+      "name": "skor_literasi^2",
+      "spearman": -0.026258316436450616,
+      "partial": -0.013280487020576397
+    },
+    {
+      "name": "|skor_literasi|",
+      "spearman": -0.026258316436450616,
+      "partial": -0.013280487020576397
+    },
+    {
+      "name": "both>0(skor_kedisiplinan,skor_literasi)",
+      "spearman": 0.0264098798086321,
+      "partial": 0.013252917288461489
+    },
+    {
+      "name": "min(skor_literasi,indeks_kehadiran)",
+      "spearman": -0.016471629688753424,
+      "partial": -0.01274434438672326
+    },
+    {
+      "name": "skor_literasi*compl",
+      "spearman": 0.010204724711683513,
+      "partial": -0.012198898611335291
+    },
+    {
+      "name": "both>0(skor_kedisiplinan,skor_minat_belajar)",
+      "spearman": -0.009671016599697107,
+      "partial": -0.011950275064692406
+    },
+    {
+      "name": "indeks_kehadiran*jarak_rumah_km",
+      "spearman": 0.023569621594687434,
+      "partial": -0.011887114802587227
+    },
+    {
+      "name": "max(skor_literasi,jumlah_saudara)",
+      "spearman": -0.0015715457146933231,
+      "partial": -0.011496724055149314
+    },
+    {
+      "name": "both>0(skor_minat_belajar,jumlah_saudara)",
+      "spearman": 0.004722007793551748,
+      "partial": -0.011426364697593167
+    },
+    {
+      "name": "skor_literasi*tryout",
+      "spearman": 0.004819340931237328,
+      "partial": -0.01135425835337749
+    },
+    {
+      "name": "skor_motivasi*skor_kedisiplinan*indeks_kehadiran",
+      "spearman": 0.009228950550561287,
+      "partial": -0.011285982800156113
+    },
+    {
+      "name": "(motiv*disc)*indeks_kehadiran",
+      "spearman": 0.009228950550561287,
+      "partial": -0.011285982800156113
+    },
+    {
+      "name": "sameSign(jarak_rumah_km,jumlah_saudara)",
+      "spearman": 0.021596450129474424,
+      "partial": 0.011229831509692405
+    },
+    {
+      "name": "sameSign(skor_motivasi,skor_literasi)",
+      "spearman": 0.004085064536530428,
+      "partial": 0.011084607495419882
+    },
+    {
+      "name": "skor_motivasi*skor_ekstrakurikuler*jumlah_saudara",
+      "spearman": 0.016071621924111018,
+      "partial": -0.011079761649173106
+    },
+    {
+      "name": "max(skor_kedisiplinan,skor_literasi)",
+      "spearman": -0.004773460976116284,
+      "partial": -0.011019474316194953
+    },
+    {
+      "name": "skor_ekstrakurikuler*jarak_rumah_km",
+      "spearman": 0.011476904476502505,
+      "partial": -0.010993192147558261
+    },
+    {
+      "name": "sameSign(skor_literasi,skor_ekstrakurikuler)",
+      "spearman": -0.013853549811635607,
+      "partial": -0.010830408652068677
+    },
+    {
+      "name": "skor_motivasi*indeks_kehadiran*jumlah_saudara",
+      "spearman": 0.03361664244095118,
+      "partial": 0.010759449100073737
+    },
+    {
+      "name": "skor_motivasi*skor_kedisiplinan*jumlah_saudara",
+      "spearman": 0.03905307575829484,
+      "partial": 0.010729007561009186
+    },
+    {
+      "name": "(motiv*disc)*jumlah_saudara",
+      "spearman": 0.03905307575829484,
+      "partial": 0.010729007561009186
+    },
+    {
+      "name": "skor_motivasi*skor_minat_belajar*indeks_kehadiran",
+      "spearman": 0.005683136832730833,
+      "partial": 0.010622809911173562
+    },
+    {
+      "name": "both>0(skor_motivasi,jarak_rumah_km)",
+      "spearman": -0.008608536059267546,
+      "partial": -0.01056243647943985
+    },
+    {
+      "name": "both>0(skor_kedisiplinan,skor_ekstrakurikuler)",
+      "spearman": 0.010187794039266835,
+      "partial": 0.010494839017757872
+    },
+    {
+      "name": "max(skor_literasi,jarak_rumah_km)",
+      "spearman": -0.017097753220954366,
+      "partial": -0.010455474567809918
+    },
+    {
+      "name": "indeks_kehadiran*jarak_rumah_km*jumlah_saudara",
+      "spearman": -0.005467453212803354,
+      "partial": 0.010419083539646906
+    },
+    {
+      "name": "sameSign(skor_minat_belajar,indeks_kehadiran)",
+      "spearman": -0.005045041947130464,
+      "partial": -0.010418279216172837
+    },
+    {
+      "name": "skor_minat_belajar*indeks_kehadiran",
+      "spearman": 0.008932716560892619,
+      "partial": -0.0103279048233351
+    },
+    {
+      "name": "max(skor_literasi,indeks_kehadiran)",
+      "spearman": -0.007744109549419451,
+      "partial": -0.010294183052792463
+    },
+    {
+      "name": "skor_motivasi*skor_minat_belajar*jarak_rumah_km",
+      "spearman": 0.012905891987812612,
+      "partial": 0.010206298931766474
+    },
+    {
+      "name": "both>0(skor_minat_belajar,skor_ekstrakurikuler)",
+      "spearman": 0.007050674130519518,
+      "partial": -0.010201406741258329
+    },
+    {
+      "name": "skor_kedisiplinan*jarak_rumah_km",
+      "spearman": 0.0035950405849181294,
+      "partial": -0.010112448517903756
+    },
+    {
+      "name": "skor_motivasi*jumlah_saudara",
+      "spearman": 0.00795839377227312,
+      "partial": -0.010087559513193222
+    },
+    {
+      "name": "min(skor_motivasi,skor_ekstrakurikuler)",
+      "spearman": 0.015389594842584639,
+      "partial": -0.009905564489443294
+    },
+    {
+      "name": "min(skor_minat_belajar,jumlah_saudara)",
+      "spearman": 0.030456777632463076,
+      "partial": 0.009807502413636184
+    },
+    {
+      "name": "skor_kedisiplinan*skor_literasi",
+      "spearman": 0.02653649978340499,
+      "partial": 0.009777126033189068
+    },
+    {
+      "name": "both>0(skor_literasi,skor_ekstrakurikuler)",
+      "spearman": 0.0038033957490597563,
+      "partial": -0.009611177837152332
+    },
+    {
+      "name": "skor_minat_belajar*indeks_kehadiran*jarak_rumah_km",
+      "spearman": -0.01182578613368798,
+      "partial": -0.00959191375686909
+    },
+    {
+      "name": "sameSign(skor_literasi,skor_minat_belajar)",
+      "spearman": 0.00037910130779031793,
+      "partial": -0.009468426443617072
+    },
+    {
+      "name": "max(indeks_kehadiran,jumlah_saudara)",
+      "spearman": -0.004983219809088491,
+      "partial": -0.009435057339803576
+    },
+    {
+      "name": "skor_ekstrakurikuler^2",
+      "spearman": 0.00844515370470303,
+      "partial": -0.009429252455496005
+    },
+    {
+      "name": "|skor_ekstrakurikuler|",
+      "spearman": 0.00844515370470303,
+      "partial": -0.009429252455496005
+    },
+    {
+      "name": "skor_kedisiplinan*indeks_kehadiran*skor_ekstrakurikuler",
+      "spearman": 0.0037279037712992396,
+      "partial": 0.009281713893004797
+    },
+    {
+      "name": "skor_motivasi*skor_minat_belajar",
+      "spearman": -0.00018184707817991676,
+      "partial": 0.00913991753003944
+    },
+    {
+      "name": "min(indeks_kehadiran,skor_ekstrakurikuler)",
+      "spearman": -0.009913477837290383,
+      "partial": -0.00886603183595352
+    },
+    {
+      "name": "max(skor_minat_belajar,jarak_rumah_km)",
+      "spearman": 0.008106096752048217,
+      "partial": 0.008821689924541317
+    },
+    {
+      "name": "min(skor_kedisiplinan,skor_ekstrakurikuler)",
+      "spearman": 0.012139126500686687,
+      "partial": 0.00860653760541562
+    },
+    {
+      "name": "min(indeks_kehadiran,jarak_rumah_km)",
+      "spearman": -0.02032678912328322,
+      "partial": -0.008369072316126656
+    },
+    {
+      "name": "skor_literasi*jarak_rumah_km*jumlah_saudara",
+      "spearman": 0.0018286440070232402,
+      "partial": -0.008309370530599334
+    },
+    {
+      "name": "both>0(indeks_kehadiran,jarak_rumah_km)",
+      "spearman": -0.016870455412965103,
+      "partial": -0.008074538978945613
+    },
+    {
+      "name": "min(skor_motivasi,indeks_kehadiran)",
+      "spearman": 0.013809321107420478,
+      "partial": -0.008018272862556202
+    },
+    {
+      "name": "skor_literasi*skor_minat_belajar*jumlah_saudara",
+      "spearman": -0.008093857921249729,
+      "partial": 0.00799462160977185
+    },
+    {
+      "name": "skor_minat_belajar*jarak_rumah_km",
+      "spearman": -0.006770922999122327,
+      "partial": -0.00795786201115589
+    },
+    {
+      "name": "both>0(skor_motivasi,indeks_kehadiran)",
+      "spearman": 0.011050890772039926,
+      "partial": 0.007687854294252175
+    },
+    {
+      "name": "skor_motivasi*skor_ekstrakurikuler",
+      "spearman": -0.01660092326784572,
+      "partial": -0.0076655529200579725
+    },
+    {
+      "name": "min(skor_kedisiplinan,indeks_kehadiran)",
+      "spearman": -0.0267925484322565,
+      "partial": -0.007546205289174984
+    },
+    {
+      "name": "indeks_kehadiran*skor_ekstrakurikuler*jumlah_saudara",
+      "spearman": 0.018752117682796235,
+      "partial": 0.007530144897351119
+    },
+    {
+      "name": "skor_kedisiplinan*indeks_kehadiran",
+      "spearman": -0.027903829236042996,
+      "partial": -0.0075240406392675695
+    },
+    {
+      "name": "min(skor_motivasi,skor_minat_belajar)",
+      "spearman": 0.037816090344287616,
+      "partial": 0.00749170919315295
+    },
+    {
+      "name": "min(skor_kedisiplinan,jumlah_saudara)",
+      "spearman": 0.01197172402596255,
+      "partial": 0.007346205372374143
+    },
+    {
+      "name": "skor_motivasi*skor_literasi*indeks_kehadiran",
+      "spearman": 0.035997418788654506,
+      "partial": 0.007277769349896491
+    },
+    {
+      "name": "both>0(jarak_rumah_km,jumlah_saudara)",
+      "spearman": 0.006306480034103835,
+      "partial": 0.007273910465926578
+    },
+    {
+      "name": "skor_motivasi*skor_kedisiplinan*skor_literasi",
+      "spearman": -0.002484466800840901,
+      "partial": 0.007198249548298434
+    },
+    {
+      "name": "(motiv*disc)*skor_literasi",
+      "spearman": -0.002484466800840901,
+      "partial": 0.007198249548298434
+    },
+    {
+      "name": "skor_minat_belajar*tryout",
+      "spearman": 0.024446647829469117,
+      "partial": 0.00714116628762261
+    },
+    {
+      "name": "sameSign(skor_kedisiplinan,jumlah_saudara)",
+      "spearman": 0.0026061904652608125,
+      "partial": -0.007107066339602805
+    },
+    {
+      "name": "min(skor_motivasi,skor_literasi)",
+      "spearman": 0.028139123078414832,
+      "partial": -0.006867041280638352
+    },
+    {
+      "name": "min(skor_motivasi,skor_kedisiplinan)",
+      "spearman": 0.1391881442562512,
+      "partial": 0.006848901974247545
+    },
+    {
+      "name": "max(skor_kedisiplinan,skor_minat_belajar)",
+      "spearman": 0.023628918463170327,
+      "partial": 0.006834709889152424
+    },
+    {
+      "name": "min(skor_literasi,jumlah_saudara)",
+      "spearman": 0.01743637993409228,
+      "partial": -0.0067330965945591
+    },
+    {
+      "name": "both>0(skor_ekstrakurikuler,jumlah_saudara)",
+      "spearman": -0.0007078248515634773,
+      "partial": -0.006499349304050341
+    },
+    {
+      "name": "rankmotiv*rankdisc",
+      "spearman": 0.0883742480073732,
+      "partial": 0.0064879257211689825
+    },
+    {
+      "name": "jarak_rumah_km^2",
+      "spearman": -3.0462489911122616e-05,
+      "partial": 0.006477661029551761
+    },
+    {
+      "name": "|jarak_rumah_km|",
+      "spearman": -3.0462489911122616e-05,
+      "partial": 0.006477661029551761
+    },
+    {
+      "name": "skor_kedisiplinan*jumlah_saudara",
+      "spearman": 0.013091973080223722,
+      "partial": 0.0064322097350562974
+    },
+    {
+      "name": "min(indeks_kehadiran,jumlah_saudara)",
+      "spearman": -0.007102028330212534,
+      "partial": 0.006425203185632971
+    },
+    {
+      "name": "sameSign(skor_literasi,jumlah_saudara)",
+      "spearman": 0.021320280718289706,
+      "partial": 0.006200243292273859
+    },
+    {
+      "name": "max(indeks_kehadiran,skor_ekstrakurikuler)",
+      "spearman": 0.007878633371198684,
+      "partial": 0.006144430483229177
+    },
+    {
+      "name": "min(skor_literasi,jarak_rumah_km)",
+      "spearman": -0.011780336571831463,
+      "partial": -0.005984365961936112
+    },
+    {
+      "name": "both>0(skor_ekstrakurikuler,jarak_rumah_km)",
+      "spearman": 0.0031751001626227414,
+      "partial": -0.005952489938338525
+    },
+    {
+      "name": "skor_motivasi*skor_literasi*skor_ekstrakurikuler",
+      "spearman": -0.005606125570579645,
+      "partial": -0.005948957646328935
+    },
+    {
+      "name": "skor_ekstrakurikuler*jumlah_saudara",
+      "spearman": 0.0034380589026442735,
+      "partial": -0.005856956634944548
+    },
+    {
+      "name": "skor_motivasi*skor_literasi",
+      "spearman": 0.003743913483589416,
+      "partial": 0.0057582035345811675
+    },
+    {
+      "name": "indeks_kehadiran*tryout",
+      "spearman": -0.023519114872281994,
+      "partial": -0.005752987389610747
+    },
+    {
+      "name": "skor_minat_belajar*jarak_rumah_km*jumlah_saudara",
+      "spearman": -0.013497277648204008,
+      "partial": -0.005729051649197266
+    },
+    {
+      "name": "rankik*rankek",
+      "spearman": -0.007058737939287036,
+      "partial": -0.005580805628842747
+    },
+    {
+      "name": "(motiv*disc)^2",
+      "spearman": -0.012531919387181527,
+      "partial": 0.0055469884395768195
+    },
+    {
+      "name": "|motiv*disc|",
+      "spearman": -0.012531919387181527,
+      "partial": 0.0055469884395768195
+    },
+    {
+      "name": "skor_minat_belajar*compl",
+      "spearman": 0.02013075870341538,
+      "partial": 0.0054925551279612385
+    },
+    {
+      "name": "skor_kedisiplinan^2",
+      "spearman": 0.012332026115725581,
+      "partial": -0.005391640109543724
+    },
+    {
+      "name": "|skor_kedisiplinan|",
+      "spearman": 0.012332026115725581,
+      "partial": -0.005391640109543724
+    },
+    {
+      "name": "skor_motivasi*skor_minat_belajar*jumlah_saudara",
+      "spearman": -0.010670575520224731,
+      "partial": 0.005390533676099176
+    },
+    {
+      "name": "max(skor_ekstrakurikuler,jarak_rumah_km)",
+      "spearman": -0.005922523904953896,
+      "partial": 0.005386394916101789
+    },
+    {
+      "name": "skor_literasi*jumlah_saudara",
+      "spearman": 0.003346322902515223,
+      "partial": -0.005377168270087842
+    },
+    {
+      "name": "sameSign(skor_motivasi,jarak_rumah_km)",
+      "spearman": -0.01422556255223616,
+      "partial": -0.005360162418460339
+    },
+    {
+      "name": "max(skor_minat_belajar,skor_ekstrakurikuler)",
+      "spearman": 0.02059731629268967,
+      "partial": 0.0053226479921555745
+    },
+    {
+      "name": "max(skor_motivasi,jarak_rumah_km)",
+      "spearman": -0.008868064488718656,
+      "partial": -0.005242574916619847
+    },
+    {
+      "name": "both>0(skor_literasi,indeks_kehadiran)",
+      "spearman": -0.004800558094668773,
+      "partial": 0.005221477920515014
+    },
+    {
+      "name": "skor_motivasi*indeks_kehadiran",
+      "spearman": 0.024150314574303312,
+      "partial": 0.005209321082641351
+    },
+    {
+      "name": "min(jarak_rumah_km,jumlah_saudara)",
+      "spearman": 0.001433306872824542,
+      "partial": 0.0051932851128377875
+    },
+    {
+      "name": "skor_minat_belajar^2",
+      "spearman": -0.008444266764594225,
+      "partial": -0.0051193591438121935
+    },
+    {
+      "name": "|skor_minat_belajar|",
+      "spearman": -0.008444266764594225,
+      "partial": -0.0051193591438121935
+    },
+    {
+      "name": "max(skor_motivasi,indeks_kehadiran)",
+      "spearman": -0.020459535900013114,
+      "partial": -0.005084294925789811
+    },
+    {
+      "name": "jumlah_saudara^2",
+      "spearman": -0.008433711326391636,
+      "partial": -0.005055189908679528
+    },
+    {
+      "name": "|jumlah_saudara|",
+      "spearman": -0.008433711326391636,
+      "partial": -0.005055189908679528
+    },
+    {
+      "name": "skor_literasi*skor_minat_belajar",
+      "spearman": 0.00972290620703149,
+      "partial": 0.00482419453859195
+    },
+    {
+      "name": "both>0(skor_literasi,jumlah_saudara)",
+      "spearman": 0.025512075119748106,
+      "partial": 0.004779560574697307
+    },
+    {
+      "name": "max(skor_motivasi,skor_minat_belajar)",
+      "spearman": 0.005323906900014036,
+      "partial": -0.0046396426646151505
+    },
+    {
+      "name": "min(skor_kedisiplinan,skor_literasi)",
+      "spearman": 0.005250673872395788,
+      "partial": -0.004609662400700101
+    },
+    {
+      "name": "skor_ekstrakurikuler*tryout",
+      "spearman": 0.007987480974522572,
+      "partial": -0.004582754991381802
+    },
+    {
+      "name": "skor_literasi*skor_minat_belajar*jarak_rumah_km",
+      "spearman": 8.716497330416316e-05,
+      "partial": 0.004572086369455954
+    },
+    {
+      "name": "max(skor_minat_belajar,indeks_kehadiran)",
+      "spearman": 0.0013094495241091665,
+      "partial": 0.004428059782696775
+    },
+    {
+      "name": "skor_kedisiplinan*skor_literasi*jarak_rumah_km",
+      "spearman": 0.017084074372517872,
+      "partial": 0.004417066383650413
+    },
+    {
+      "name": "skor_motivasi^2",
+      "spearman": -0.031850758271506886,
+      "partial": 0.004385598618342758
+    },
+    {
+      "name": "|skor_motivasi|",
+      "spearman": -0.031850758271506886,
+      "partial": 0.004385598618342758
+    },
+    {
+      "name": "max(skor_minat_belajar,jumlah_saudara)",
+      "spearman": 0.017990045522580513,
+      "partial": 0.0042682901902700585
+    },
+    {
+      "name": "skor_literasi*jarak_rumah_km",
+      "spearman": -0.0028684394746489286,
+      "partial": 0.004227381552072352
+    },
+    {
+      "name": "ik*ek*motiv",
+      "spearman": -0.02407317395868983,
+      "partial": -0.0040983447707684745
+    },
+    {
+      "name": "skor_motivasi*indeks_kehadiran*skor_ekstrakurikuler",
+      "spearman": -0.0240710672239199,
+      "partial": -0.004096330704960061
+    },
+    {
+      "name": "sameSign(skor_kedisiplinan,indeks_kehadiran)",
+      "spearman": -0.02167524362984287,
+      "partial": -0.004066813858402844
+    },
+    {
+      "name": "motiv^2*disc",
+      "spearman": 0.00471875986413518,
+      "partial": 0.004051309930960541
+    },
+    {
+      "name": "skor_motivasi*compl",
+      "spearman": 0.014110087908142619,
+      "partial": -0.004043528435230719
+    },
+    {
+      "name": "min(skor_motivasi,jarak_rumah_km)",
+      "spearman": -0.00013741950266135927,
+      "partial": -0.0038203042346690134
+    },
+    {
+      "name": "skor_motivasi*skor_kedisiplinan*jarak_rumah_km",
+      "spearman": -0.013916682923016468,
+      "partial": -0.003758225212262403
+    },
+    {
+      "name": "(motiv*disc)*jarak_rumah_km",
+      "spearman": -0.013916682923016468,
+      "partial": -0.003758225212262403
+    },
+    {
+      "name": "both>0(skor_motivasi,skor_minat_belajar)",
+      "spearman": 0.004964489791305133,
+      "partial": -0.0036603314774999265
+    },
+    {
+      "name": "indeks_kehadiran*compl",
+      "spearman": -0.021924385756442556,
+      "partial": -0.003579379768981647
+    },
+    {
+      "name": "jumlah_saudara*tryout",
+      "spearman": 0.009352485295902538,
+      "partial": 0.0035335193880883177
+    },
+    {
+      "name": "skor_minat_belajar*indeks_kehadiran*jumlah_saudara",
+      "spearman": -0.013102421034407665,
+      "partial": 0.003517187847419026
+    },
+    {
+      "name": "min(skor_motivasi,jumlah_saudara)",
+      "spearman": 0.027910776991918712,
+      "partial": -0.003502693101575976
+    },
+    {
+      "name": "jumlah_saudara*compl",
+      "spearman": 0.013865732887962919,
+      "partial": 0.003484418405008974
+    },
+    {
+      "name": "both>0(skor_kedisiplinan,indeks_kehadiran)",
+      "spearman": -0.02495706860031181,
+      "partial": 0.0034651959518063893
+    },
+    {
+      "name": "min(skor_kedisiplinan,skor_minat_belajar)",
+      "spearman": 0.0019057155917938157,
+      "partial": -0.0034367809810028783
+    },
+    {
+      "name": "indeks_kehadiran^2",
+      "spearman": 0.014378823394230921,
+      "partial": 0.003407076051220699
+    },
+    {
+      "name": "|indeks_kehadiran|",
+      "spearman": 0.014378823394230921,
+      "partial": 0.003407076051220699
+    },
+    {
+      "name": "sameSign(skor_motivasi,skor_ekstrakurikuler)",
+      "spearman": -0.017946630016191838,
+      "partial": -0.003108528495858869
+    },
+    {
+      "name": "max(jarak_rumah_km,jumlah_saudara)",
+      "spearman": -0.015839687768276583,
+      "partial": -0.0030230751440984962
+    },
+    {
+      "name": "jarak_rumah_km*jumlah_saudara",
+      "spearman": 0.011440384767419678,
+      "partial": 0.0030228982221568185
+    },
+    {
+      "name": "both>0(skor_motivasi,skor_literasi)",
+      "spearman": 0.024269603969169155,
+      "partial": 0.0029603663185796608
+    },
+    {
+      "name": "skor_motivasi*skor_literasi*skor_minat_belajar",
+      "spearman": -0.0026186009928150507,
+      "partial": 0.0029512905357190664
+    },
+    {
+      "name": "sameSign(skor_motivasi,skor_minat_belajar)",
+      "spearman": -0.0131908063244342,
+      "partial": 0.0029319395915812447
+    },
+    {
+      "name": "min(skor_literasi,skor_minat_belajar)",
+      "spearman": 0.02790536091780459,
+      "partial": 0.0028980281853615343
+    },
+    {
+      "name": "both>0(skor_motivasi,skor_kedisiplinan)",
+      "spearman": 0.15549073217028486,
+      "partial": 0.0028758292474122503
+    },
+    {
+      "name": "sameSign(skor_ekstrakurikuler,jumlah_saudara)",
+      "spearman": 0.00342649630848494,
+      "partial": -0.0028700909125389325
+    },
+    {
+      "name": "skor_kedisiplinan*compl",
+      "spearman": -0.007029161800970936,
+      "partial": -0.002857583483339547
+    },
+    {
+      "name": "skor_motivasi*tryout",
+      "spearman": 0.01572656895677012,
+      "partial": -0.002806538882027088
+    },
+    {
+      "name": "min(skor_minat_belajar,indeks_kehadiran)",
+      "spearman": 0.010886840094665666,
+      "partial": -0.0027904949562494157
+    },
+    {
+      "name": "skor_literasi*skor_minat_belajar*skor_ekstrakurikuler",
+      "spearman": -0.0043587644342023574,
+      "partial": 0.002734588649035555
+    },
+    {
+      "name": "skor_kedisiplinan*skor_ekstrakurikuler*jumlah_saudara",
+      "spearman": -0.015772225545449936,
+      "partial": -0.0027209566920475357
+    },
+    {
+      "name": "max(skor_literasi,skor_ekstrakurikuler)",
+      "spearman": 0.01175631885191259,
+      "partial": -0.0027158712420417715
+    },
+    {
+      "name": "skor_kedisiplinan*skor_literasi*skor_minat_belajar",
+      "spearman": -0.01369317163228615,
+      "partial": -0.002617298865149987
+    },
+    {
+      "name": "skor_motivasi*skor_ekstrakurikuler*jarak_rumah_km",
+      "spearman": 0.009451705161134147,
+      "partial": 0.0025335184703750594
+    },
+    {
+      "name": "skor_literasi*indeks_kehadiran",
+      "spearman": -0.014808112251227133,
+      "partial": -0.00246166016614985
+    },
+    {
+      "name": "min(skor_minat_belajar,skor_ekstrakurikuler)",
+      "spearman": 0.025286167101354173,
+      "partial": -0.0024611062633394703
+    },
+    {
+      "name": "max(skor_motivasi,jumlah_saudara)",
+      "spearman": -0.0012908439319580202,
+      "partial": 0.0021352958360104867
+    },
+    {
+      "name": "skor_kedisiplinan*indeks_kehadiran*jumlah_saudara",
+      "spearman": -0.017985372837455587,
+      "partial": -0.0019694257143965973
+    },
+    {
+      "name": "min(skor_ekstrakurikuler,jarak_rumah_km)",
+      "spearman": -0.0018007971911954183,
+      "partial": -0.0019330803325820014
+    },
+    {
+      "name": "skor_minat_belajar*skor_ekstrakurikuler*jumlah_saudara",
+      "spearman": -0.01720346399525274,
+      "partial": -0.0018770669054599966
+    },
+    {
+      "name": "max(skor_literasi,skor_minat_belajar)",
+      "spearman": 0.01107939129308257,
+      "partial": -0.0018737968559444389
+    },
+    {
+      "name": "sameSign(skor_ekstrakurikuler,jarak_rumah_km)",
+      "spearman": 0.019047124950426195,
+      "partial": -0.0018373169830830315
+    },
+    {
+      "name": "both>0(skor_literasi,skor_minat_belajar)",
+      "spearman": 0.022446384576505902,
+      "partial": -0.0017293484612741518
+    },
+    {
+      "name": "skor_motivasi*skor_literasi*jumlah_saudara",
+      "spearman": 0.0060703080734229465,
+      "partial": -0.00169378374713457
+    },
+    {
+      "name": "skor_ekstrakurikuler*compl",
+      "spearman": 0.004513721916910313,
+      "partial": -0.0016809701742755627
+    },
+    {
+      "name": "max(skor_kedisiplinan,indeks_kehadiran)",
+      "spearman": 0.008936831073937829,
+      "partial": 0.0016706813857380472
+    },
+    {
+      "name": "min(skor_ekstrakurikuler,jumlah_saudara)",
+      "spearman": 0.018118363519229453,
+      "partial": 0.0015511208582618978
+    },
+    {
+      "name": "min(skor_minat_belajar,jarak_rumah_km)",
+      "spearman": 0.0044699106798006495,
+      "partial": 0.0012432039238038388
+    },
+    {
+      "name": "skor_motivasi*jarak_rumah_km",
+      "spearman": -0.01825063430525295,
+      "partial": 0.001193955285508347
+    },
+    {
+      "name": "max(skor_kedisiplinan,jarak_rumah_km)",
+      "spearman": -0.009663398272962592,
+      "partial": 0.0011487006730546783
+    },
+    {
+      "name": "jarak_rumah_km*tryout",
+      "spearman": -0.02016200066487392,
+      "partial": -0.001060406522355176
+    },
+    {
+      "name": "both>0(skor_minat_belajar,jarak_rumah_km)",
+      "spearman": 0.0003253241412153419,
+      "partial": 0.0010153279105253208
+    },
+    {
+      "name": "sameSign(skor_kedisiplinan,jarak_rumah_km)",
+      "spearman": 0.011330442894192197,
+      "partial": -0.0010018912280760125
+    },
+    {
+      "name": "jarak_rumah_km*compl",
+      "spearman": -0.010010455400779904,
+      "partial": 0.0009808977414083977
+    },
+    {
+      "name": "both>0(skor_kedisiplinan,jarak_rumah_km)",
+      "spearman": -0.0005109501665755353,
+      "partial": 0.0008596025258411338
+    },
+    {
+      "name": "sameSign(skor_literasi,indeks_kehadiran)",
+      "spearman": -0.01529868247914015,
+      "partial": 0.0008060651476521258
+    },
+    {
+      "name": "max(indeks_kehadiran,jarak_rumah_km)",
+      "spearman": -0.031877601595945756,
+      "partial": -0.0007008338798547933
+    },
+    {
+      "name": "skor_motivasi*skor_minat_belajar*skor_ekstrakurikuler",
+      "spearman": -0.0003753812766543553,
+      "partial": -0.000689794890258306
+    },
+    {
+      "name": "both>0(skor_kedisiplinan,jumlah_saudara)",
+      "spearman": 0.0018156953452236103,
+      "partial": -0.0005655767007729684
+    },
+    {
+      "name": "max(skor_ekstrakurikuler,jumlah_saudara)",
+      "spearman": 0.011943244322863537,
+      "partial": 0.0005133774942572588
+    },
+    {
+      "name": "max(skor_kedisiplinan,jumlah_saudara)",
+      "spearman": 0.003373081139600583,
+      "partial": 0.00047114577565712356
+    },
+    {
+      "name": "min(skor_kedisiplinan,jarak_rumah_km)",
+      "spearman": -0.009822776274596443,
+      "partial": 0.00038151974381168063
+    },
+    {
+      "name": "both>0(skor_minat_belajar,indeks_kehadiran)",
+      "spearman": -0.005724578343441187,
+      "partial": -0.0001761839596623511
+    },
+    {
+      "name": "both>0(skor_literasi,jarak_rumah_km)",
+      "spearman": 0.003150289901575189,
+      "partial": 0.0001282621770368379
+    },
+    {
+      "name": "max(skor_motivasi,skor_ekstrakurikuler)",
+      "spearman": 0.010809200785226519,
+      "partial": -0.00012699099818707003
+    },
+    {
+      "name": "sameSign(skor_literasi,jarak_rumah_km)",
+      "spearman": -0.008127658224879293,
+      "partial": -0.00011615343624782145
+    },
+    {
+      "name": "skor_kedisiplinan*skor_minat_belajar*jarak_rumah_km",
+      "spearman": -0.009894720791795557,
+      "partial": 4.261675493758639e-05
+    },
+    {
+      "name": "skor_kedisiplinan*tryout",
+      "spearman": 0.0020674606360135115,
+      "partial": 1.1382667977788251e-05
+    },
+    {
+      "name": "sameSign(skor_minat_belajar,jarak_rumah_km)",
+      "spearman": 0.0025135772994297383,
+      "partial": 1.2183150084775981e-06
+    }
+  ],
+  "no_kaggle_submission_made": true
+}
