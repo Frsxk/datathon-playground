@@ -1,0 +1,46 @@
+{
+  "experiment": "v10_exam_order_x_completion",
+  "generated_at": "2026-07-14T10:55:55.486208+00:00",
+  "feature": "exam_order_x_completion = urutan_ujian * tugas_selesai / max(tugas_diberikan, 1)",
+  "feature_count": 57,
+  "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "baseline_per_seed": [
+    0.6215625,
+    0.6134375,
+    0.62625,
+    0.62625,
+    0.6234375
+  ],
+  "candidate_per_seed": [
+    0.61875,
+    0.6171875,
+    0.6215625,
+    0.6215625,
+    0.624375
+  ],
+  "gain_per_seed": [
+    -0.0028124999999999956,
+    0.003750000000000031,
+    -0.004687499999999956,
+    -0.004687499999999956,
+    0.0009375000000000355
+  ],
+  "baseline_mean": 0.6221875,
+  "candidate_mean": 0.6206875000000001,
+  "mean_gain": -0.0014999999999999458,
+  "improved_seed_count": 2,
+  "promotion_gate": {
+    "min_mean_gain": 0.001,
+    "min_improved_seeds": 3,
+    "eligible": false
+  },
+  "candidate_path": null,
+  "prediction_counts": null,
+  "no_kaggle_submission_made": true
+}
