@@ -1,0 +1,730 @@
+{
+  "experiment": "advanced_generator_fingerprint_audit",
+  "generated_at": "2026-07-14T11:11:12.534526+00:00",
+  "top_single_features": [
+    {
+      "feature": "completion_ratio",
+      "spearman": 0.40282188911636563,
+      "quartile_accuracy_best_orientation": 0.3815625
+    },
+    {
+      "feature": "tryout_x_completion",
+      "spearman": 0.4098051400220142,
+      "quartile_accuracy_best_orientation": 0.3734375
+    },
+    {
+      "feature": "wk_std",
+      "spearman": 0.3968580530563687,
+      "quartile_accuracy_best_orientation": 0.3621875
+    },
+    {
+      "feature": "wk_range",
+      "spearman": 0.3779912169970198,
+      "quartile_accuracy_best_orientation": 0.3515625
+    },
+    {
+      "feature": "motiv_x_disc",
+      "spearman": 0.35447344445861256,
+      "quartile_accuracy_best_orientation": 0.3446875
+    },
+    {
+      "feature": "wk_entropy",
+      "spearman": 0.30956214804687004,
+      "quartile_accuracy_best_orientation": 0.32625
+    },
+    {
+      "feature": "day_longest_high_run",
+      "spearman": -0.26720705475968626,
+      "quartile_accuracy_best_orientation": 0.3259375
+    },
+    {
+      "feature": "completion_remaining",
+      "spearman": -0.26428468328096105,
+      "quartile_accuracy_best_orientation": 0.31875
+    },
+    {
+      "feature": "wk_longest_positive_run",
+      "spearman": 0.2719202794874632,
+      "quartile_accuracy_best_orientation": 0.316875
+    },
+    {
+      "feature": "wk_longest_negative_run",
+      "spearman": 0.2655089316386158,
+      "quartile_accuracy_best_orientation": 0.31125
+    },
+    {
+      "feature": "exam_order_x_completion",
+      "spearman": 0.22105201341561553,
+      "quartile_accuracy_best_orientation": 0.3075
+    },
+    {
+      "feature": "wk_period4",
+      "spearman": 0.24609512730130526,
+      "quartile_accuracy_best_orientation": 0.306875
+    },
+    {
+      "feature": "tugas_selesai",
+      "spearman": 0.210891313741157,
+      "quartile_accuracy_best_orientation": 0.3059375
+    },
+    {
+      "feature": "day_period4",
+      "spearman": 0.13610806026904784,
+      "quartile_accuracy_best_orientation": 0.2884375
+    },
+    {
+      "feature": "day_period5",
+      "spearman": -0.12597834984102288,
+      "quartile_accuracy_best_orientation": 0.2834375
+    },
+    {
+      "feature": "day_period3",
+      "spearman": 0.11401460229146791,
+      "quartile_accuracy_best_orientation": 0.27625
+    },
+    {
+      "feature": "skor_tryout",
+      "spearman": 0.10760050532211415,
+      "quartile_accuracy_best_orientation": 0.2746875
+    },
+    {
+      "feature": "skor_kedisiplinan",
+      "spearman": -0.0007008377534503568,
+      "quartile_accuracy_best_orientation": 0.2740625
+    },
+    {
+      "feature": "skor_motivasi",
+      "spearman": 0.01275582186600537,
+      "quartile_accuracy_best_orientation": 0.27125
+    },
+    {
+      "feature": "wk_period3",
+      "spearman": 0.04297043484844868,
+      "quartile_accuracy_best_orientation": 0.2709375
+    },
+    {
+      "feature": "aktivitas_hari_07",
+      "spearman": -0.01993518770134133,
+      "quartile_accuracy_best_orientation": 0.2690625
+    },
+    {
+      "feature": "day_range",
+      "spearman": -0.04876008365499218,
+      "quartile_accuracy_best_orientation": 0.265625
+    },
+    {
+      "feature": "nilai_minggu_06",
+      "spearman": -0.0030792563311831697,
+      "quartile_accuracy_best_orientation": 0.26375
+    },
+    {
+      "feature": "day_mean",
+      "spearman": -0.015638302487116038,
+      "quartile_accuracy_best_orientation": 0.26375
+    },
+    {
+      "feature": "aktivitas_hari_11",
+      "spearman": -0.025745936422942102,
+      "quartile_accuracy_best_orientation": 0.2625
+    },
+    {
+      "feature": "nilai_minggu_03",
+      "spearman": -0.0011001020766690636,
+      "quartile_accuracy_best_orientation": 0.2615625
+    },
+    {
+      "feature": "nilai_minggu_11",
+      "spearman": -0.0022482372053812174,
+      "quartile_accuracy_best_orientation": 0.26125
+    },
+    {
+      "feature": "aktivitas_hari_14",
+      "spearman": 0.03592493995687655,
+      "quartile_accuracy_best_orientation": 0.260625
+    },
+    {
+      "feature": "day_period2",
+      "spearman": -0.006088017324851651,
+      "quartile_accuracy_best_orientation": 0.260625
+    },
+    {
+      "feature": "nilai_minggu_02",
+      "spearman": 0.010102428225128633,
+      "quartile_accuracy_best_orientation": 0.26
+    },
+    {
+      "feature": "aktivitas_hari_12",
+      "spearman": -0.04646020027703696,
+      "quartile_accuracy_best_orientation": 0.26
+    },
+    {
+      "feature": "day_entropy",
+      "spearman": 0.029729939553620237,
+      "quartile_accuracy_best_orientation": 0.26
+    },
+    {
+      "feature": "nilai_minggu_09",
+      "spearman": -0.007246477612431428,
+      "quartile_accuracy_best_orientation": 0.2596875
+    },
+    {
+      "feature": "kelas",
+      "spearman": 0.004557227729399754,
+      "quartile_accuracy_best_orientation": 0.2596875
+    },
+    {
+      "feature": "skor_ekstrakurikuler",
+      "spearman": 0.010039231002165971,
+      "quartile_accuracy_best_orientation": 0.2596875
+    },
+    {
+      "feature": "skor_minat_belajar",
+      "spearman": 0.026123271695031123,
+      "quartile_accuracy_best_orientation": 0.2596875
+    },
+    {
+      "feature": "wk_period2",
+      "spearman": 0.014516621849772305,
+      "quartile_accuracy_best_orientation": 0.259375
+    },
+    {
+      "feature": "aktivitas_hari_05",
+      "spearman": -0.012434858515138328,
+      "quartile_accuracy_best_orientation": 0.2584375
+    },
+    {
+      "feature": "day_std",
+      "spearman": -0.036103557039783706,
+      "quartile_accuracy_best_orientation": 0.2578125
+    },
+    {
+      "feature": "aktivitas_hari_06",
+      "spearman": -0.03271557474413388,
+      "quartile_accuracy_best_orientation": 0.2575
+    }
+  ],
+  "cluster_results": [
+    {
+      "representation": "generator_params",
+      "transform": "none",
+      "k": 32,
+      "full_train_weighted_purity": 0.4240625,
+      "cv_majority_accuracy": 0.41625
+    },
+    {
+      "representation": "generator_params",
+      "transform": "pca8",
+      "k": 64,
+      "full_train_weighted_purity": 0.4746875,
+      "cv_majority_accuracy": 0.4121875
+    },
+    {
+      "representation": "generator_params",
+      "transform": "none",
+      "k": 8,
+      "full_train_weighted_purity": 0.4153125,
+      "cv_majority_accuracy": 0.4109375
+    },
+    {
+      "representation": "generator_params",
+      "transform": "none",
+      "k": 64,
+      "full_train_weighted_purity": 0.47125,
+      "cv_majority_accuracy": 0.4096875
+    },
+    {
+      "representation": "generator_params",
+      "transform": "pca8",
+      "k": 32,
+      "full_train_weighted_purity": 0.4453125,
+      "cv_majority_accuracy": 0.4084375
+    },
+    {
+      "representation": "generator_params",
+      "transform": "pca8",
+      "k": 16,
+      "full_train_weighted_purity": 0.4253125,
+      "cv_majority_accuracy": 0.3925
+    },
+    {
+      "representation": "generator_params",
+      "transform": "none",
+      "k": 16,
+      "full_train_weighted_purity": 0.4071875,
+      "cv_majority_accuracy": 0.383125
+    },
+    {
+      "representation": "raw",
+      "transform": "none",
+      "k": 32,
+      "full_train_weighted_purity": 0.40875,
+      "cv_majority_accuracy": 0.381875
+    },
+    {
+      "representation": "generator_params",
+      "transform": "none",
+      "k": 4,
+      "full_train_weighted_purity": 0.37875,
+      "cv_majority_accuracy": 0.38125
+    },
+    {
+      "representation": "raw",
+      "transform": "none",
+      "k": 64,
+      "full_train_weighted_purity": 0.4209375,
+      "cv_majority_accuracy": 0.36875
+    },
+    {
+      "representation": "generator_params",
+      "transform": "pca8",
+      "k": 4,
+      "full_train_weighted_purity": 0.378125,
+      "cv_majority_accuracy": 0.3684375
+    },
+    {
+      "representation": "raw",
+      "transform": "none",
+      "k": 4,
+      "full_train_weighted_purity": 0.361875,
+      "cv_majority_accuracy": 0.356875
+    },
+    {
+      "representation": "raw",
+      "transform": "none",
+      "k": 16,
+      "full_train_weighted_purity": 0.3703125,
+      "cv_majority_accuracy": 0.356875
+    },
+    {
+      "representation": "raw",
+      "transform": "pca8",
+      "k": 16,
+      "full_train_weighted_purity": 0.3621875,
+      "cv_majority_accuracy": 0.3565625
+    },
+    {
+      "representation": "raw",
+      "transform": "pca8",
+      "k": 32,
+      "full_train_weighted_purity": 0.39875,
+      "cv_majority_accuracy": 0.3496875
+    },
+    {
+      "representation": "raw",
+      "transform": "pca8",
+      "k": 8,
+      "full_train_weighted_purity": 0.341875,
+      "cv_majority_accuracy": 0.3490625
+    },
+    {
+      "representation": "raw",
+      "transform": "pca8",
+      "k": 64,
+      "full_train_weighted_purity": 0.421875,
+      "cv_majority_accuracy": 0.341875
+    },
+    {
+      "representation": "raw",
+      "transform": "none",
+      "k": 8,
+      "full_train_weighted_purity": 0.3384375,
+      "cv_majority_accuracy": 0.339375
+    },
+    {
+      "representation": "generator_params",
+      "transform": "pca8",
+      "k": 8,
+      "full_train_weighted_purity": 0.4,
+      "cv_majority_accuracy": 0.3321875
+    },
+    {
+      "representation": "raw",
+      "transform": "pca8",
+      "k": 4,
+      "full_train_weighted_purity": 0.363125,
+      "cv_majority_accuracy": 0.2584375
+    }
+  ],
+  "quantization": [
+    {
+      "feature": "id",
+      "unique_train": 3200,
+      "unique_test": 800,
+      "unique_combined": 4000,
+      "decimal_places": 0,
+      "min_positive_step": 1.0,
+      "is_integer_grid": true
+    },
+    {
+      "feature": "kelas",
+      "unique_train": 786,
+      "unique_test": 492,
+      "unique_combined": 795,
+      "decimal_places": 0,
+      "min_positive_step": 1.0,
+      "is_integer_grid": true
+    },
+    {
+      "feature": "tugas_diberikan",
+      "unique_train": 113,
+      "unique_test": 113,
+      "unique_combined": 113,
+      "decimal_places": 0,
+      "min_positive_step": 1.0,
+      "is_integer_grid": true
+    },
+    {
+      "feature": "tugas_selesai",
+      "unique_train": 106,
+      "unique_test": 93,
+      "unique_combined": 107,
+      "decimal_places": 0,
+      "min_positive_step": 1.0,
+      "is_integer_grid": true
+    },
+    {
+      "feature": "aktivitas_hari_03",
+      "unique_train": 621,
+      "unique_test": 429,
+      "unique_combined": 653,
+      "decimal_places": 1,
+      "min_positive_step": 0.09999999999999432,
+      "is_integer_grid": false
+    },
+    {
+      "feature": "aktivitas_hari_16",
+      "unique_train": 635,
+      "unique_test": 405,
+      "unique_combined": 650,
+      "decimal_places": 1,
+      "min_positive_step": 0.09999999999999432,
+      "is_integer_grid": false
+    },
+    {
+      "feature": "aktivitas_hari_09",
+      "unique_train": 619,
+      "unique_test": 419,
+      "unique_combined": 647,
+      "decimal_places": 1,
+      "min_positive_step": 0.09999999999999432,
+      "is_integer_grid": false
+    },
+    {
+      "feature": "aktivitas_hari_05",
+      "unique_train": 614,
+      "unique_test": 423,
+      "unique_combined": 641,
+      "decimal_places": 1,
+      "min_positive_step": 0.09999999999999432,
+      "is_integer_grid": false
+    },
+    {
+      "feature": "aktivitas_hari_08",
+      "unique_train": 615,
+      "unique_test": 427,
+      "unique_combined": 641,
+      "decimal_places": 1,
+      "min_positive_step": 0.09999999999999432,
+      "is_integer_grid": false
+    },
+    {
+      "feature": "aktivitas_hari_12",
+      "unique_train": 629,
+      "unique_test": 415,
+      "unique_combined": 641,
+      "decimal_places": 1,
+      "min_positive_step": 0.09999999999999432,
+      "is_integer_grid": false
+    },
+    {
+      "feature": "aktivitas_hari_04",
+      "unique_train": 619,
+      "unique_test": 426,
+      "unique_combined": 640,
+      "decimal_places": 1,
+      "min_positive_step": 0.09999999999999432,
+      "is_integer_grid": false
+    },
+    {
+      "feature": "aktivitas_hari_13",
+      "unique_train": 622,
+      "unique_test": 411,
+      "unique_combined": 640,
+      "decimal_places": 1,
+      "min_positive_step": 0.09999999999999432,
+      "is_integer_grid": false
+    },
+    {
+      "feature": "aktivitas_hari_06",
+      "unique_train": 611,
+      "unique_test": 423,
+      "unique_combined": 638,
+      "decimal_places": 1,
+      "min_positive_step": 0.09999999999999432,
+      "is_integer_grid": false
+    },
+    {
+      "feature": "aktivitas_hari_01",
+      "unique_train": 610,
+      "unique_test": 441,
+      "unique_combined": 637,
+      "decimal_places": 1,
+      "min_positive_step": 0.09999999999999432,
+      "is_integer_grid": false
+    },
+    {
+      "feature": "aktivitas_hari_07",
+      "unique_train": 617,
+      "unique_test": 410,
+      "unique_combined": 637,
+      "decimal_places": 1,
+      "min_positive_step": 0.09999999999999432,
+      "is_integer_grid": false
+    },
+    {
+      "feature": "aktivitas_hari_10",
+      "unique_train": 613,
+      "unique_test": 419,
+      "unique_combined": 635,
+      "decimal_places": 1,
+      "min_positive_step": 0.09999999999999432,
+      "is_integer_grid": false
+    },
+    {
+      "feature": "aktivitas_hari_11",
+      "unique_train": 617,
+      "unique_test": 419,
+      "unique_combined": 633,
+      "decimal_places": 1,
+      "min_positive_step": 0.09999999999999432,
+      "is_integer_grid": false
+    },
+    {
+      "feature": "aktivitas_hari_14",
+      "unique_train": 620,
+      "unique_test": 399,
+      "unique_combined": 631,
+      "decimal_places": 1,
+      "min_positive_step": 0.09999999999999432,
+      "is_integer_grid": false
+    },
+    {
+      "feature": "aktivitas_hari_15",
+      "unique_train": 605,
+      "unique_test": 421,
+      "unique_combined": 631,
+      "decimal_places": 1,
+      "min_positive_step": 0.09999999999999432,
+      "is_integer_grid": false
+    },
+    {
+      "feature": "aktivitas_hari_02",
+      "unique_train": 603,
+      "unique_test": 425,
+      "unique_combined": 627,
+      "decimal_places": 1,
+      "min_positive_step": 0.09999999999999432,
+      "is_integer_grid": false
+    },
+    {
+      "feature": "skor_tryout",
+      "unique_train": 519,
+      "unique_test": 377,
+      "unique_combined": 542,
+      "decimal_places": 1,
+      "min_positive_step": 0.09999999999999432,
+      "is_integer_grid": false
+    },
+    {
+      "feature": "nilai_minggu_03",
+      "unique_train": 234,
+      "unique_test": 191,
+      "unique_combined": 238,
+      "decimal_places": 1,
+      "min_positive_step": 0.09999999999999964,
+      "is_integer_grid": false
+    },
+    {
+      "feature": "nilai_minggu_08",
+      "unique_train": 231,
+      "unique_test": 202,
+      "unique_combined": 238,
+      "decimal_places": 1,
+      "min_positive_step": 0.09999999999999964,
+      "is_integer_grid": false
+    },
+    {
+      "feature": "nilai_minggu_11",
+      "unique_train": 236,
+      "unique_test": 184,
+      "unique_combined": 237,
+      "decimal_places": 1,
+      "min_positive_step": 0.09999999999999964,
+      "is_integer_grid": false
+    },
+    {
+      "feature": "nilai_minggu_06",
+      "unique_train": 230,
+      "unique_test": 200,
+      "unique_combined": 236,
+      "decimal_places": 1,
+      "min_positive_step": 0.09999999999999964,
+      "is_integer_grid": false
+    },
+    {
+      "feature": "nilai_minggu_02",
+      "unique_train": 230,
+      "unique_test": 195,
+      "unique_combined": 235,
+      "decimal_places": 1,
+      "min_positive_step": 0.09999999999999964,
+      "is_integer_grid": false
+    },
+    {
+      "feature": "nilai_minggu_10",
+      "unique_train": 229,
+      "unique_test": 187,
+      "unique_combined": 235,
+      "decimal_places": 1,
+      "min_positive_step": 0.09999999999999964,
+      "is_integer_grid": false
+    },
+    {
+      "feature": "nilai_minggu_12",
+      "unique_train": 230,
+      "unique_test": 189,
+      "unique_combined": 235,
+      "decimal_places": 1,
+      "min_positive_step": 0.09999999999999964,
+      "is_integer_grid": false
+    },
+    {
+      "feature": "nilai_minggu_07",
+      "unique_train": 230,
+      "unique_test": 196,
+      "unique_combined": 234,
+      "decimal_places": 1,
+      "min_positive_step": 0.09999999999999964,
+      "is_integer_grid": false
+    },
+    {
+      "feature": "nilai_minggu_04",
+      "unique_train": 231,
+      "unique_test": 192,
+      "unique_combined": 232,
+      "decimal_places": 1,
+      "min_positive_step": 0.09999999999999964,
+      "is_integer_grid": false
+    },
+    {
+      "feature": "nilai_minggu_09",
+      "unique_train": 228,
+      "unique_test": 190,
+      "unique_combined": 232,
+      "decimal_places": 1,
+      "min_positive_step": 0.09999999999999964,
+      "is_integer_grid": false
+    },
+    {
+      "feature": "nilai_minggu_01",
+      "unique_train": 225,
+      "unique_test": 193,
+      "unique_combined": 230,
+      "decimal_places": 1,
+      "min_positive_step": 0.09999999999999964,
+      "is_integer_grid": false
+    },
+    {
+      "feature": "nilai_minggu_05",
+      "unique_train": 224,
+      "unique_test": 198,
+      "unique_combined": 229,
+      "decimal_places": 1,
+      "min_positive_step": 0.09999999999999964,
+      "is_integer_grid": false
+    },
+    {
+      "feature": "skor_kedisiplinan",
+      "unique_train": 690,
+      "unique_test": 419,
+      "unique_combined": 720,
+      "decimal_places": 2,
+      "min_positive_step": 0.009999999999999787,
+      "is_integer_grid": false
+    },
+    {
+      "feature": "skor_motivasi",
+      "unique_train": 674,
+      "unique_test": 434,
+      "unique_combined": 705,
+      "decimal_places": 2,
+      "min_positive_step": 0.009999999999999787,
+      "is_integer_grid": false
+    },
+    {
+      "feature": "skor_minat_belajar",
+      "unique_train": 497,
+      "unique_test": 343,
+      "unique_combined": 515,
+      "decimal_places": 2,
+      "min_positive_step": 0.009999999999999787,
+      "is_integer_grid": false
+    },
+    {
+      "feature": "jumlah_saudara",
+      "unique_train": 492,
+      "unique_test": 338,
+      "unique_combined": 511,
+      "decimal_places": 2,
+      "min_positive_step": 0.009999999999999787,
+      "is_integer_grid": false
+    },
+    {
+      "feature": "skor_ekstrakurikuler",
+      "unique_train": 482,
+      "unique_test": 332,
+      "unique_combined": 507,
+      "decimal_places": 2,
+      "min_positive_step": 0.009999999999999787,
+      "is_integer_grid": false
+    },
+    {
+      "feature": "skor_literasi",
+      "unique_train": 485,
+      "unique_test": 359,
+      "unique_combined": 507,
+      "decimal_places": 2,
+      "min_positive_step": 0.009999999999999787,
+      "is_integer_grid": false
+    },
+    {
+      "feature": "jarak_rumah_km",
+      "unique_train": 483,
+      "unique_test": 348,
+      "unique_combined": 505,
+      "decimal_places": 2,
+      "min_positive_step": 0.009999999999999787,
+      "is_integer_grid": false
+    },
+    {
+      "feature": "indeks_kehadiran",
+      "unique_train": 481,
+      "unique_test": 345,
+      "unique_combined": 500,
+      "decimal_places": 2,
+      "min_positive_step": 0.009999999999999787,
+      "is_integer_grid": false
+    },
+    {
+      "feature": "urutan_ujian",
+      "unique_train": 2744,
+      "unique_test": 775,
+      "unique_combined": 3291,
+      "decimal_places": 4,
+      "min_positive_step": 9.999999999998899e-05,
+      "is_integer_grid": false
+    }
+  ],
+  "interpretation": "No advanced local fingerprint explains a 0.82 public score. Single formulae and unsupervised clusters are far below v7, so further local climb is unlikely without an external clue or leaderboard probing.",
+  "no_kaggle_submission_made": true
+}
