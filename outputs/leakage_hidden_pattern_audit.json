@@ -1,0 +1,393 @@
+{
+  "experiment": "leakage_hidden_pattern_audit",
+  "generated_at": "2026-07-14T10:01:54.192214+00:00",
+  "train_shape": [
+    3200,
+    43
+  ],
+  "test_shape": [
+    800,
+    42
+  ],
+  "target_counts": {
+    "0": 813,
+    "1": 796,
+    "2": 784,
+    "3": 807
+  },
+  "exact_overlap": {
+    "overlap_count": 0,
+    "test_overlap_count": 0,
+    "train_duplicate_feature_rows": 0,
+    "test_duplicate_feature_rows": 0
+  },
+  "nearest_neighbor": {
+    "min_distance": 3.9575720514238952,
+    "p01_distance": 4.315853582992312,
+    "p05_distance": 4.5662869027754605,
+    "median_distance": 5.2283471064104665,
+    "nearest_target_counts": {
+      "0": 203,
+      "1": 221,
+      "2": 193,
+      "3": 183
+    },
+    "near_duplicate_threshold_count_lt_1e_minus_6": 0
+  },
+  "top_train_test_shift": [
+    {
+      "feature": "aktivitas_hari_09",
+      "smd": 0.07666483052734016,
+      "abs_smd": 0.07666483052734016
+    },
+    {
+      "feature": "aktivitas_hari_06",
+      "smd": -0.07619994115960048,
+      "abs_smd": 0.07619994115960048
+    },
+    {
+      "feature": "nilai_minggu_05",
+      "smd": -0.055243851258637226,
+      "abs_smd": 0.055243851258637226
+    },
+    {
+      "feature": "nilai_minggu_07",
+      "smd": 0.05281229194184999,
+      "abs_smd": 0.05281229194184999
+    },
+    {
+      "feature": "nilai_minggu_03",
+      "smd": -0.05115086409490466,
+      "abs_smd": 0.05115086409490466
+    },
+    {
+      "feature": "aktivitas_hari_05",
+      "smd": -0.04885055463092917,
+      "abs_smd": 0.04885055463092917
+    },
+    {
+      "feature": "skor_minat_belajar",
+      "smd": 0.0482378670215828,
+      "abs_smd": 0.0482378670215828
+    },
+    {
+      "feature": "aktivitas_hari_15",
+      "smd": -0.04673587293316085,
+      "abs_smd": 0.04673587293316085
+    },
+    {
+      "feature": "skor_ekstrakurikuler",
+      "smd": -0.04437793049110645,
+      "abs_smd": 0.04437793049110645
+    },
+    {
+      "feature": "skor_tryout",
+      "smd": -0.04376303159859355,
+      "abs_smd": 0.04376303159859355
+    },
+    {
+      "feature": "aktivitas_hari_11",
+      "smd": 0.038204050100932696,
+      "abs_smd": 0.038204050100932696
+    },
+    {
+      "feature": "nilai_minggu_04",
+      "smd": -0.037894606119214684,
+      "abs_smd": 0.037894606119214684
+    },
+    {
+      "feature": "nilai_minggu_06",
+      "smd": -0.037373617726018965,
+      "abs_smd": 0.037373617726018965
+    },
+    {
+      "feature": "nilai_minggu_12",
+      "smd": 0.03632451776257527,
+      "abs_smd": 0.03632451776257527
+    },
+    {
+      "feature": "nilai_minggu_09",
+      "smd": 0.03418761999903101,
+      "abs_smd": 0.03418761999903101
+    },
+    {
+      "feature": "aktivitas_hari_04",
+      "smd": 0.03345356481461679,
+      "abs_smd": 0.03345356481461679
+    },
+    {
+      "feature": "aktivitas_hari_03",
+      "smd": 0.03285076192840887,
+      "abs_smd": 0.03285076192840887
+    },
+    {
+      "feature": "aktivitas_hari_07",
+      "smd": -0.03164365022548895,
+      "abs_smd": 0.03164365022548895
+    },
+    {
+      "feature": "tugas_selesai",
+      "smd": 0.028874007513266877,
+      "abs_smd": 0.028874007513266877
+    },
+    {
+      "feature": "nilai_minggu_11",
+      "smd": 0.028500114326235466,
+      "abs_smd": 0.028500114326235466
+    },
+    {
+      "feature": "aktivitas_hari_10",
+      "smd": 0.02756926826292828,
+      "abs_smd": 0.02756926826292828
+    },
+    {
+      "feature": "nilai_minggu_08",
+      "smd": 0.027523129466808297,
+      "abs_smd": 0.027523129466808297
+    },
+    {
+      "feature": "tugas_diberikan",
+      "smd": 0.02415353064321687,
+      "abs_smd": 0.02415353064321687
+    },
+    {
+      "feature": "aktivitas_hari_14",
+      "smd": 0.024074134602368985,
+      "abs_smd": 0.024074134602368985
+    },
+    {
+      "feature": "jumlah_saudara",
+      "smd": -0.023718367687348817,
+      "abs_smd": 0.023718367687348817
+    },
+    {
+      "feature": "skor_literasi",
+      "smd": 0.022286356366386716,
+      "abs_smd": 0.022286356366386716
+    },
+    {
+      "feature": "urutan_ujian",
+      "smd": -0.020780162223067722,
+      "abs_smd": 0.020780162223067722
+    },
+    {
+      "feature": "kelas",
+      "smd": -0.020427060769937538,
+      "abs_smd": 0.020427060769937538
+    },
+    {
+      "feature": "indeks_kehadiran",
+      "smd": -0.019164337136344488,
+      "abs_smd": 0.019164337136344488
+    },
+    {
+      "feature": "aktivitas_hari_08",
+      "smd": 0.018486516910462603,
+      "abs_smd": 0.018486516910462603
+    }
+  ],
+  "feature_set_results": [
+    {
+      "feature_set": "full_raw",
+      "n_features": 41,
+      "hgb_accuracy": 0.4746875
+    },
+    {
+      "feature_set": "scalar_nonseq",
+      "n_features": 13,
+      "hgb_accuracy": 0.39125
+    },
+    {
+      "feature_set": "weekly_only",
+      "n_features": 12,
+      "hgb_accuracy": 0.3346875
+    },
+    {
+      "feature_set": "daily_only",
+      "n_features": 16,
+      "hgb_accuracy": 0.3165625
+    },
+    {
+      "feature_set": "id_patterns_m17",
+      "n_features": 4,
+      "hgb_accuracy": 0.2740625
+    },
+    {
+      "feature_set": "id_patterns_m32+kelas_urutan",
+      "n_features": 6,
+      "hgb_accuracy": 0.2728125
+    },
+    {
+      "feature_set": "id_patterns_m32",
+      "n_features": 4,
+      "hgb_accuracy": 0.2684375
+    },
+    {
+      "feature_set": "id_patterns_m20+kelas_urutan",
+      "n_features": 6,
+      "hgb_accuracy": 0.2665625
+    },
+    {
+      "feature_set": "id_patterns_m17+kelas_urutan",
+      "n_features": 6,
+      "hgb_accuracy": 0.265625
+    },
+    {
+      "feature_set": "id_patterns_m5",
+      "n_features": 4,
+      "hgb_accuracy": 0.2653125
+    },
+    {
+      "feature_set": "id_patterns_m64",
+      "n_features": 4,
+      "hgb_accuracy": 0.2653125
+    },
+    {
+      "feature_set": "id_patterns_m9+kelas_urutan",
+      "n_features": 6,
+      "hgb_accuracy": 0.2646875
+    },
+    {
+      "feature_set": "id_patterns_m40+kelas_urutan",
+      "n_features": 6,
+      "hgb_accuracy": 0.264375
+    },
+    {
+      "feature_set": "kelas_urutan",
+      "n_features": 2,
+      "hgb_accuracy": 0.2640625
+    },
+    {
+      "feature_set": "id_patterns_m2+kelas_urutan",
+      "n_features": 6,
+      "hgb_accuracy": 0.263125
+    },
+    {
+      "feature_set": "id_patterns_m8",
+      "n_features": 4,
+      "hgb_accuracy": 0.2628125
+    },
+    {
+      "feature_set": "id_patterns_m15+kelas_urutan",
+      "n_features": 6,
+      "hgb_accuracy": 0.2628125
+    },
+    {
+      "feature_set": "id_patterns_m4",
+      "n_features": 4,
+      "hgb_accuracy": 0.2621875
+    },
+    {
+      "feature_set": "id_patterns_m5+kelas_urutan",
+      "n_features": 6,
+      "hgb_accuracy": 0.261875
+    },
+    {
+      "feature_set": "id_patterns_m24",
+      "n_features": 4,
+      "hgb_accuracy": 0.261875
+    },
+    {
+      "feature_set": "id_patterns_m3",
+      "n_features": 4,
+      "hgb_accuracy": 0.2609375
+    },
+    {
+      "feature_set": "id_patterns_m8+kelas_urutan",
+      "n_features": 6,
+      "hgb_accuracy": 0.2609375
+    },
+    {
+      "feature_set": "id_patterns_m18+kelas_urutan",
+      "n_features": 6,
+      "hgb_accuracy": 0.26
+    },
+    {
+      "feature_set": "id_patterns_m10",
+      "n_features": 4,
+      "hgb_accuracy": 0.259375
+    },
+    {
+      "feature_set": "id_patterns_m11+kelas_urutan",
+      "n_features": 6,
+      "hgb_accuracy": 0.259375
+    },
+    {
+      "feature_set": "id_patterns_m16",
+      "n_features": 4,
+      "hgb_accuracy": 0.259375
+    },
+    {
+      "feature_set": "id_patterns_m4+kelas_urutan",
+      "n_features": 6,
+      "hgb_accuracy": 0.2584375
+    },
+    {
+      "feature_set": "id_patterns_m40",
+      "n_features": 4,
+      "hgb_accuracy": 0.258125
+    },
+    {
+      "feature_set": "admin_only",
+      "n_features": 3,
+      "hgb_accuracy": 0.2578125
+    },
+    {
+      "feature_set": "id_patterns_m7+kelas_urutan",
+      "n_features": 6,
+      "hgb_accuracy": 0.2578125
+    },
+    {
+      "feature_set": "id_patterns_m2",
+      "n_features": 4,
+      "hgb_accuracy": 0.2575
+    },
+    {
+      "feature_set": "id_patterns_m9",
+      "n_features": 4,
+      "hgb_accuracy": 0.2575
+    },
+    {
+      "feature_set": "id_patterns_m50",
+      "n_features": 4,
+      "hgb_accuracy": 0.256875
+    },
+    {
+      "feature_set": "id_patterns_m13",
+      "n_features": 4,
+      "hgb_accuracy": 0.2565625
+    },
+    {
+      "feature_set": "id_patterns_m11",
+      "n_features": 4,
+      "hgb_accuracy": 0.25625
+    },
+    {
+      "feature_set": "id_patterns_m24+kelas_urutan",
+      "n_features": 6,
+      "hgb_accuracy": 0.255625
+    },
+    {
+      "feature_set": "id_only",
+      "n_features": 1,
+      "hgb_accuracy": 0.255
+    },
+    {
+      "feature_set": "id_patterns_m16+kelas_urutan",
+      "n_features": 6,
+      "hgb_accuracy": 0.25375
+    },
+    {
+      "feature_set": "id_patterns_m10+kelas_urutan",
+      "n_features": 6,
+      "hgb_accuracy": 0.253125
+    },
+    {
+      "feature_set": "id_patterns_m18",
+      "n_features": 4,
+      "hgb_accuracy": 0.2528125
+    }
+  ],
+  "no_kaggle_submission_made": true,
+  "interpretation": "No obvious row-order/ID/admin shortcut appears in local CV. The 0.82 public score likely requires a deeper feature-generation rule, external clue, or public-LB probing rather than a simple deterministic ID leak."
+}
